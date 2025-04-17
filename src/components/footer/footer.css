@@ -1,0 +1,72 @@
+@import url("../../common.css");
+
+.footer-container {
+    font-family: "TTnorms";
+    width: 100%;
+    height: 400px;
+    position: fixed;
+    bottom: 0;
+    border-radius: 50px 50px 0 0;
+    background-color: #F5F5F5;
+    color: #606060;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.logo-info {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.rights {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.icon-container {
+    display: flex;
+    gap: 20px;
+}
+
+.icon-container img {
+    cursor: pointer;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info div {
+    display: flex;
+    gap: 10px;
+}
+
+@media (max-width: 767px) {
+    .footer-container {
+        height: 635px;
+    }
+
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+    }
+}
