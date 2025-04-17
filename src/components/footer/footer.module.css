@@ -1,6 +1,6 @@
 @import url("../../common.css");
 
-.footer-container {
+.footerContainer {
     font-family: "TTnorms";
     width: 100%;
     height: 400px;
@@ -11,7 +11,7 @@
     color: #606060;
 }
 
-.main-content {
+.mainContent {
     display: flex;
     justify-content: space-between;
     padding-left: 15%;
@@ -20,7 +20,7 @@
     padding-bottom: 100px;
 }
 
-.logo-info {
+.logoInfo {
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -32,13 +32,13 @@
     gap: 18px;
 }
 
-.contact-info {
+.contactInfo {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-.icon-container {
+.iconContainer {
     display: flex;
     gap: 20px;
 }
@@ -59,11 +59,11 @@
 }
 
 @media (max-width: 767px) {
-    .footer-container {
+    .footerContainer {
         height: 635px;
     }
 
-    .main-content {
+    .mainContent {
         flex-direction: column;
         align-items: center;
         text-align: center;

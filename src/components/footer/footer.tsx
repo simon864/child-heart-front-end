@@ -1,4 +1,4 @@
-import "./footer.css"
+import footerStyle from "./footer.module.css"
 import logo from '../../assets/images/footer/logo.svg';
 import telegram from '../../assets/images/footer/telegram-logo.svg';
 import vk from '../../assets/images/footer/vk-logo.svg';
@@ -9,25 +9,25 @@ import geo from '../../assets/images/footer/geo-icon.svg';
 
 export default function Footer() {
     return (
-        <div className="footer-container">
-            <div className="main-content">
-                <div className="logo-info">
+        <div className={footerStyle.footerContainer}>
+            <div className={footerStyle.mainContent}>
+                <div className={footerStyle.logoInfo}>
                     <div className="logo">
                         <img src={logo} alt="Logo" />
                     </div>
-                    <div className="rights">
+                    <div className={footerStyle.rights}>
                         <p>© 2011-2016 Детское сердце. <br />
                         Все права защищены.</p>
                         <p>Договор оферты</p>
                     </div>
                 </div>
-                <div className="contact-info">
-                    <div className="icon-container">
+                <div className={footerStyle.contactInfo}>
+                    <div className={footerStyle.iconContainer}>
                         <img src= {telegram} alt="Telegram" />
                         <img src= {vk} alt="VK" />
                         <img src= {ok} alt="OK" />
                     </div>
-                    <div className="info">
+                    <div className={footerStyle.info}>
                         <div className="phone-number1">
                             <img src= {phone} alt="phone" />
                             <span>+7 (3842) 64-42-45</span>
