@@ -7,3 +7,8 @@
     font-family: "TTnorms";
     src: url('./assets/fonts/TTNorms-Regular.woff2');
 }
+
+@font-face {
+    font-family: "SS";
+    src: url('./assets/fonts/ShantellSans-Regular.ttf');
+}

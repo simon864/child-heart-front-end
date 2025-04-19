@@ -1,0 +1,206 @@
+.page {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 85px;
+}
+
+.ssText {
+    font-family: "SS";
+    color: #00A752;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+.title img {
+    width: 180px;
+    height: 180px;
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 20px;
+}
+
+.buttonContainer button {
+    font-family: "TTnorms";
+    height: 60px;
+    border-radius: 5px;
+    border: none;
+    padding: 18px 32px 18px 32px;
+    font-size: 20px;
+    line-height: 100%;
+    background-color: #A8E3AE40;
+    color: #000000;
+    cursor: pointer;
+}
+
+.reportsButton {
+    width: 135px;
+}
+
+.documentsButton {
+    width: 260px;
+}
+
+.titleText {
+    margin-top: 30px;
+}
+
+.paragraphContainer{
+    font-family: "TTnorms";
+    font-size: 16px;
+    line-height: 20px;
+    color: #606060;
+}
+
+.paragraphContainer:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.biographyContainer {
+    margin-top: 30px;
+}
+
+.photo {
+    width: 320px;
+    height: 450px;
+    border-radius: 20px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.biographyTitle {
+    font-family: "TTnorms";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.achievementTitle {
+    font-family: "TTnorms";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.achievementGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 20px;
+}
+
+.achievementCard {
+    font-family: "TTnorms";
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #F5F5F5;
+    padding: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.achievementCard p {
+    font-size: 20px;
+    line-height: 30px;
+    color: #00A752;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+}
+
+.achievementCard span {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #000000;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .achievementGrid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+
+@media (max-width: 767px) {
+
+    .page {
+        padding-left: 10px;
+        padding-right: 10px; 
+    }
+
+    .title img{
+        display: none;
+    }
+
+    .ssText {
+        font-size: 28px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .title {
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+
+    .buttonContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .biographyTitle {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .reverseContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .photoContainer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .photo {
+        height: 210px;
+        width: 150px;
+        margin-bottom: 25px;
+        margin-right: 0;
+    }
+
+    .achievementContainer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .achievementTitle {
+        text-align: center;
+    }
+
+    .achievementGrid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .achievementCard p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
