@@ -4,6 +4,7 @@ import qrCode from "../../assets/images/presidentPage/qr-code.png"
 import presidentPhoto from "..//..//assets/images/presidentPage/president-photo.png"
 import { text, award } from "./data"
 import { ParagraphInfo, AchievementCard } from "./props"
+import { useState } from "react"
 
 export default function PresidentPage() {
 
@@ -47,6 +48,10 @@ function TitlePresident() {
 function Biography() {
 
     const sliceArrayText = text.slice(2);
+    const [textContainerVisible, setTextContainerVisible] = useState(true);
+    const handleToggleTextContainer = () => {
+      setTextContainerVisible(!textContainerVisible);
+    };
 
     return (
         <div className={presidentStyle.biographyContainer}>
@@ -54,10 +59,14 @@ function Biography() {
             <div className={presidentStyle.photoContainer}>
                 <img className={presidentStyle.photo} src={presidentPhoto} alt="President Photo" />
             </div>
-            <div className={presidentStyle.textContainer}>
+            <div className={textContainerVisible ? presidentStyle.textContainer : ''}>
                 {sliceArrayText.map((sliceArrayText, index) => (
                     <ParagraphInfo key={index} paragraph={sliceArrayText.paragraph} />
                 ))}
+            </div>
+            <div className={presidentStyle.readMoreContainer}>
+                <button className={presidentStyle.readMoreButton} onClick={handleToggleTextContainer}>
+                {textContainerVisible ? 'Читать дальше' : 'Скрыть текст'} </button>
             </div>
         </div>
     )
