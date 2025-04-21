@@ -44,6 +44,10 @@
     cursor: pointer;
 }
 
+.iconContainer img:hover {
+    transform: scale(1.02);
+}
+
 .info {
     display: flex;
     flex-direction: column;

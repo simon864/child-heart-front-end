@@ -17,3 +17,21 @@
     width: 180px;
     height: 180px;
 }
+
+@media (max-width: 767px){
+
+.title img {
+    display: none;
+}
+
+.ssText {
+    font-size: 28px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.title {
+    justify-content: center;
+    margin-bottom: 25px;
+}
+}
