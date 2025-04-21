@@ -3,26 +3,6 @@
     padding-right: 15%;
 }
 
-.title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 85px;
-}
-
-.ssText {
-    font-family: "SS";
-    color: #00A752;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 50px;
-}
-
-.title img {
-    width: 180px;
-    height: 180px;
-}
-
 .buttonContainer {
     display: flex;
     gap: 20px;

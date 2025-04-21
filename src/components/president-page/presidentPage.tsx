@@ -1,10 +1,10 @@
 import Footer from "../footer/footer"
 import presidentStyle from "./presidentPage.module.css"
-import qrCode from "../../assets/images/presidentPage/qr-code.png"
 import presidentPhoto from "..//..//assets/images/presidentPage/president-photo.png"
 import { text, award } from "./data"
-import { ParagraphInfo, AchievementCard } from "./props"
+import { ParagraphInfo, AchievementCard,} from "./props"
 import { useState } from "react"
+import Title from "../title/title"
 
 export default function PresidentPage() {
 
@@ -18,7 +18,6 @@ export default function PresidentPage() {
             <Footer />
         </>
     )
-
 }
 
 function TitlePresident() {
@@ -27,10 +26,7 @@ function TitlePresident() {
 
     return (
         <>
-            <div className={presidentStyle.title}>
-                <span className={presidentStyle.ssText}>О президенте фонда “Детское сердце”</span>
-                <img src={qrCode} alt="QR CODE" />
-            </div>
+            <Title text="О президенте фонда “Детское сердце”"/>
             <div className={presidentStyle.buttonContainer}>
                 <button className={presidentStyle.reportsButton}>Отчеты</button>
                 <button className={presidentStyle.documentsButton}>Уставные документы</button>
@@ -42,7 +38,6 @@ function TitlePresident() {
             </div>
         </>
     )
-
 }
 
 function Biography() {
