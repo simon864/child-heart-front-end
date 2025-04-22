@@ -1,0 +1,33 @@
+.reportsPage {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.reportsContainer {
+    font-family: "TTnorms";
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 10px;
+}
+
+.link {
+    color: #606060;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.link:hover {
+    color: #00A752;
+}
+
+@media (max-width: 767px) {
+    .reportsPage {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .reportsContainer {
+        text-align: center;
+    }
+}

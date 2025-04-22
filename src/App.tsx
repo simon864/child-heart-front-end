@@ -1,12 +1,18 @@
-import './App.css'
+import appStyles from './App.module.css'
 import './common.css'
-import PresidentPage from './components/president-page/presidentPage'
+import Footer from './components/footer/footer'
+import { BrowserRouter } from "react-router-dom";
+import AppRouters from './routes';
 
 export default function App() {
   return (
     <>
-    <div className='main-content'></div>
-      <PresidentPage/>
+    <BrowserRouter>
+      <main className={appStyles.mainContainer}>
+        <AppRouters/>
+      </main>
+      </BrowserRouter>
+      <Footer/>
     </>
   )
 }

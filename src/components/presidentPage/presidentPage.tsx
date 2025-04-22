@@ -1,21 +1,20 @@
-import Footer from "../footer/footer"
 import presidentStyle from "./presidentPage.module.css"
 import presidentPhoto from "..//..//assets/images/presidentPage/president-photo.png"
 import { text, award } from "./data"
 import { ParagraphInfo, AchievementCard,} from "./props"
 import { useState } from "react"
 import Title from "../title/title"
+import { useNavigate } from "react-router-dom";
 
 export default function PresidentPage() {
 
     return (
         <>
-            <div className={presidentStyle.page}>
+            <div className={presidentStyle.presidentPage}>
                 <TitlePresident />
                 <Biography />
                 <Achievements />
             </div>
-            <Footer />
         </>
     )
 }
@@ -23,12 +22,16 @@ export default function PresidentPage() {
 function TitlePresident() {
 
     const sliceArrayTitle = text.slice(0, 2);
+    const navigate = useNavigate();
+    const handleReportsPageClick = () => {
+        navigate("/reportsPage")
+    }
 
     return (
         <>
             <Title text="О президенте фонда “Детское сердце”"/>
             <div className={presidentStyle.buttonContainer}>
-                <button className={presidentStyle.reportsButton}>Отчеты</button>
+                <button onClick={handleReportsPageClick} className={presidentStyle.reportsButton}>Отчеты</button>
                 <button className={presidentStyle.documentsButton}>Уставные документы</button>
             </div>
             <div className={presidentStyle.titleText}>

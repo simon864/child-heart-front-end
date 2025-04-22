@@ -1,4 +1,4 @@
-.page {
+.presidentPage {
     padding-left: 15%;
     padding-right: 15%;
 }
@@ -147,7 +147,7 @@
 
 @media (max-width: 767px) {
 
-    .page {
+    .presidentPage {
         padding-left: 10px;
         padding-right: 10px; 
     }

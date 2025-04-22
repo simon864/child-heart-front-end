@@ -9,7 +9,7 @@ import geo from '../../assets/images/footer/geo-icon.svg';
 
 export default function Footer() {
     return (
-        <div className={footerStyle.footerContainer}>
+        <footer>
             <div className={footerStyle.mainContent}>
                 <div className={footerStyle.logoInfo}>
                     <div className="logo">
@@ -47,6 +47,6 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-        </div>
+        </footer>
     )
 }
