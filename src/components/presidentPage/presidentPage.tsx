@@ -8,11 +8,9 @@ import Title from "../title/title";
 export default function PresidentPage() {
   return (
     <>
-      <div className={presidentStyle.presidentPage}>
-        <TitlePresident />
-        <Biography />
-        <Achievements />
-      </div>
+      <TitlePresident />
+      <Biography />
+      <Achievements />
     </>
   );
 }

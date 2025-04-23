@@ -6,10 +6,8 @@ import { ReportsLinks } from "./props";
 export default function ReportsPage() {
   return (
     <>
-      <div className={reportsStyle.reportsPage}>
-        <Title text={"Отчеты"} />
-        <ReportsContent />
-      </div>
+      <Title text={"Отчеты"} />
+      <ReportsContent />
     </>
   );
 }

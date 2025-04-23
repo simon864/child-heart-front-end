@@ -1,16 +1,8 @@
-.reportsPage {
-  padding-left: 15%;
-  padding-right: 15%;
-}
-
 .reportsContainer {
   font-family: "TTnorms";
   display: flex;
   flex-direction: column;
   width: fit-content;
-}
-
-.reportsContainer:not(:last-child) {
   gap: 10px;
 }
 
@@ -28,7 +20,7 @@
   font-family: "TTnorms";
   height: 60px;
   width: 260px;
-  margin-top: 50px;
+  margin-top: 40px;
   padding: 18px 32px 18px 32px;
   border-radius: 5px;
   border: none;
@@ -48,12 +40,9 @@
 }
 
 @media (max-width: 767px) {
-  .reportsPage {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
   .reportsContainer {
     text-align: center;
+    margin: 0 auto;
+    align-items: center;
   }
 }

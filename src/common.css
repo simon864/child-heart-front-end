@@ -19,3 +19,8 @@
   font-family: "SS";
   src: url("./assets/fonts/ShantellSans-Regular.ttf");
 }
+
+@font-face {
+  font-family: "TTnormsBold";
+  src: url("./assets/fonts/TTNorms-Bold.ttf");
+}
