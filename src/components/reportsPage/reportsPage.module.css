@@ -1,33 +1,59 @@
 .reportsPage {
-    padding-left: 15%;
-    padding-right: 15%;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .reportsContainer {
-    font-family: "TTnorms";
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-    gap: 10px;
+  font-family: "TTnorms";
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.reportsContainer:not(:last-child) {
+  gap: 10px;
 }
 
 .link {
-    color: #606060;
-    font-size: 16px;
-    line-height: 20px;
+  color: #606060;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .link:hover {
-    color: #00A752;
+  color: #00a752;
+}
+
+.documentsButton {
+  font-family: "TTnorms";
+  height: 60px;
+  width: 260px;
+  margin-top: 50px;
+  padding: 18px 32px 18px 32px;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  line-height: 100%;
+  background-color: #a8e3ae40;
+  color: #000000;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.documentsButton:hover {
+  transform: scale(1.01);
+  background-color: #00a752;
+  color: white;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 767px) {
-    .reportsPage {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
+  .reportsPage {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
-    .reportsContainer {
-        text-align: center;
-    }
+  .reportsContainer {
+    text-align: center;
+  }
 }

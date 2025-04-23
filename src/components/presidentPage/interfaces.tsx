@@ -1,8 +1,8 @@
 export interface ParagraphInfoProps {
-    paragraph : string;
+  paragraph: string;
 }
 
 export interface AchievementCardProps {
-    title: string;
-    year: string;
+  title: string;
+  year: string;
 }

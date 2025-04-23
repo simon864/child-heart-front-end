@@ -1,21 +1,21 @@
 * {
-    margin: 0;
-    padding: 0;
-    -webkit-tap-highlight-color: transparent;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
 #root {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 @font-face {
-    font-family: "TTnorms";
-    src: url('./assets/fonts/TTNorms-Regular.woff2');
+  font-family: "TTnorms";
+  src: url("./assets/fonts/TTNorms-Regular.woff2");
 }
 
 @font-face {
-    font-family: "SS";
-    src: url('./assets/fonts/ShantellSans-Regular.ttf');
+  font-family: "SS";
+  src: url("./assets/fonts/ShantellSans-Regular.ttf");
 }
