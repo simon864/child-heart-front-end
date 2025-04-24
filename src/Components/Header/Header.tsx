@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import styles from './Header.module.css';
-import logo from '../../assets/images/logo.png';
+import styles from './header.module.css';
+import logo from '../../assets/images/logo.svg';
 import dropdown from '../../assets/images/dropdown.svg';
 import hamburgerIcon from '../../assets/images/hamburger.svg';
 

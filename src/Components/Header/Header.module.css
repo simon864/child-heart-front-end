@@ -1,10 +1,9 @@
 .header {
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 16px;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 16px;
+  padding: 20px;
   align-items: start;
 }
 
@@ -21,7 +20,7 @@
 }
 
 .logoText {
-  margin: 8px 0 0;
+  margin: 10px 0 0;
   font-size: 16px;
 }
 
@@ -32,13 +31,13 @@
 .rightSection {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 20px;
   align-items: flex-end;
 }
 
 .navigationItems {
   display: flex;
-  gap: 24px;
+  gap: 20px;
   align-items: flex-start;
   font-size: 16px;
 }
@@ -116,11 +115,19 @@
 }
 
 .helpNow {
-  background-color: #a8e3ae;
+  background-color: #A8E3AE;
+}
+
+.helpNow:hover {
+  background-color: #98D39E;
 }
 
 .volunteer {
-  background-color: #ffdada;
+  background-color: #FFDADA;
+}
+
+.volunteer:hover {
+  background-color: #EFCACA;
 }
 
 .hamburger {

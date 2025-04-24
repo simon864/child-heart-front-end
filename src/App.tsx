@@ -1,18 +1,11 @@
 import './Common.css'
-import Header from './Components/Header/Header'
+import IndexPage from './components/index-page/indexPage'
 
 function App() {
-  
 
   return (
     <>
-    <body>
-
-      <Header />
-      <main className='center-align'>
-      </main>
-
-    </body>
+    <IndexPage/>
     </>
   )
 }

@@ -1,11 +1,11 @@
 @font-face {
   font-family: "TTnorms";
-  src: url('../assets/fonts/TTNorms-Regular.woff2');
+  src: url('./assets/fonts/TTNorms-Regular.woff2');
 }
 
 @font-face {
   font-family: "SS";
-  src: url('../assets/fonts/ShantellSans-Regular.ttf');
+  src: url('./assets/fonts/ShantellSans-Regular.ttf');
 }
 
 * {
@@ -16,4 +16,14 @@
 
 body {
   min-width: 400px;
+}
+
+.centerAlign {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  align-items: center;
 }
