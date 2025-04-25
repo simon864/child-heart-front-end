@@ -11,6 +11,7 @@ export default function Caorusel({ children }: CaoruselProps) {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    arrows: false,
   };
 
   return <Slider {...settings}>{children}</Slider>;
