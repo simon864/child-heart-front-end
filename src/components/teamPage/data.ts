@@ -1,9 +1,8 @@
 import testPhoto from "../../assets/images/objectivesPage/test.png";
-import presidentPhoto from "../../assets/images/presidentPage/president-photo.png";
 
 export const cardInfo = [
   {
-    image: presidentPhoto,
+    image: testPhoto,
     name: "Пермина Анастасия",
     post: "Заместитель исполнительного директор",
   },
@@ -13,7 +12,7 @@ export const cardInfo = [
     post: "Главный бухгалтер",
   },
   {
-    image: presidentPhoto,
+    image: testPhoto,
     name: "Лобанов Сергей",
     post: "Системный администратор",
   },
@@ -23,7 +22,7 @@ export const cardInfo = [
     post: "Менеджер",
   },
   {
-    image: presidentPhoto,
+    image: testPhoto,
     name: "Госельбах Алина",
     post: "Психолог",
   },
