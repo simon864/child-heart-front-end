@@ -59,7 +59,7 @@ function Biography() {
           className={presidentStyle.readMoreButton}
           onClick={handleToggleTextContainer}
         >
-          {textContainerVisible ? "Читать дальше" : "Скрыть текст"}{" "}
+          {textContainerVisible ? "Читать дальше" : "Скрыть текст"}
         </button>
       </div>
     </div>

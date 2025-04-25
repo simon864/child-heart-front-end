@@ -62,6 +62,12 @@
   margin-left: 45px;
 }
 
+@media (min-width: 1440px) {
+  .directionsCard {
+    height: 120px;
+  }
+}
+
 @media (max-width: 1300px) {
   .directionsContainer {
     display: flex;
@@ -91,12 +97,13 @@
 }
 
 @media (max-width: 767px) {
-  .imgContainer {
-    display: none;
-  }
   .directionsCard:first-child {
     font-size: 16px;
     line-height: 20px;
+  }
+
+  .imgContainer {
+    display: none;
   }
 
   .textContainer p {

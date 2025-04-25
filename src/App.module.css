@@ -4,9 +4,34 @@
   padding-right: 15%;
 }
 
+/*Всё что ниже нужно будет удалить, это для временного header   */
+
+.headerContainer {
+  padding-right: 15%;
+  padding-left: 15%;
+  display: flex;
+  gap: 20px;
+}
+
+.headerContainer a {
+  font-family: "TTnorms";
+  color: black;
+  text-decoration: none;
+}
+
+.headerContainer a:hover {
+  color: #00a752;
+}
+
 @media (max-width: 767px) {
   .mainContainer {
     padding-left: 10px;
     padding-right: 10px;
+  }
+
+  /* нужно будет удалить стиль для времменого header */
+
+  .headerContainer {
+    display: none;
   }
 }

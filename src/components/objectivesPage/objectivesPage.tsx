@@ -28,7 +28,7 @@ function TasksFund() {
   return (
     <div className={objectivesStyle.tasksContainer}>
       <div className={objectivesStyle.imgContainer}>
-        <img src={testImg} alt="Test" />
+        <img src={testImg} alt="Test" /> {/*тест фото надо будет поменять */}
       </div>
       <div className={objectivesStyle.textContainer}>
         <p>Задачи фонда:</p>

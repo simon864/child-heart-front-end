@@ -1,0 +1,66 @@
+.mainContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.cardContainer {
+  display: flex;
+  gap: 20px;
+}
+
+.cardContainer img {
+  height: 330px;
+  width: 245px;
+  border-radius: 20px;
+}
+
+.cardContainer p {
+  font-family: "TTnormsBold";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.cardContainer span {
+  font-family: "TTnorms";
+  color: #606060;
+  line-height: 20px;
+  margin-top: 10px;
+}
+
+.cardContainer hr {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  color: #6060601a;
+  opacity: 0.1;
+  height: 1px;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 1439px) {
+  .cardContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cardContainer hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .cardContainer p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .mainContent {
+    grid-template-columns: 1fr;
+  }
+}
