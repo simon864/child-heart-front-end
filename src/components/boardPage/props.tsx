@@ -1,5 +1,6 @@
 import boardStyle from "./boardPage.module.css";
 import { PeopleCardProps } from "./interfaces";
+
 export function PeopleCard({
   image,
   title,

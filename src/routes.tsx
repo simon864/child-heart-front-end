@@ -3,14 +3,16 @@ import PresidentPage from "./components/presidentPage/presidentPage";
 import ReportsPage from "./components/reportsPage/reportsPage";
 import ObjectivesPage from "./components/objectivesPage/objectivesPage";
 import BoardPage from "./components/boardPage/boardPage";
+import CouncilPage from "./components/councilPage/councilPage";
 
 export default function AppRouters() {
   return (
     <Routes>
-      <Route path="*" element={<ObjectivesPage />} />
+      <Route path="/ObjectivesPage" element={<ObjectivesPage />} />
       <Route path="/presidentPage" element={<PresidentPage />} />
       <Route path="/reportsPage" element={<ReportsPage />} />
-      <Route path="/boardPage" element={<BoardPage />} />
+      <Route path="/councilPage" element={<CouncilPage />} />
+      <Route path="*" element={<BoardPage />} />
     </Routes>
   );
 }
@@ -18,3 +20,5 @@ export default function AppRouters() {
 // /ObjectivesPage
 // /reportsPage
 // /presidentPage
+// /boardPage
+// /councilPage

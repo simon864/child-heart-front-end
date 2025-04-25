@@ -1,0 +1,48 @@
+.contentContainer {
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  gap: 10px;
+}
+
+.nameContainer {
+  display: flex;
+  align-items: center;
+}
+
+.postContainer {
+  display: flex;
+  align-items: center;
+}
+
+.nameContainer p {
+  font-family: "TTnormsBold";
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.postContainer span {
+  font-family: "TTnorms";
+  line-height: 20px;
+  color: #606060;
+}
+
+@media (max-width: 1023px) {
+  .contentContainer {
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+
+  .nameContainer {
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .postContainer {
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+}
