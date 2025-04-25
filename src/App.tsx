@@ -39,6 +39,9 @@ function Header() {
       <p>
         <Link to={"/councilPage"}>Попечительский совет</Link>
       </p>
+      <p>
+        <Link to={"/teamPage"}>Команда фонда</Link>
+      </p>
     </div>
   );
 }
