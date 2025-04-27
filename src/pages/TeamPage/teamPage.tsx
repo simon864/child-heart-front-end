@@ -1,8 +1,8 @@
 import teamStyle from "./teamPage.module.css";
 import { TeamCard } from "./props";
 import { cardInfo } from "./data";
-import Title from "../title/title";
-import Caorusel from "../caorusel/caorusel";
+import Title from "../../components/Title/title";
+import Caorusel from "../../components/Caorusel/caorusel";
 
 export default function TeamPage() {
   return (

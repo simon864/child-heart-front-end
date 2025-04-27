@@ -1,5 +1,5 @@
 import reportsStyle from "./reportsPage.module.css";
-import Title from "../title/title";
+import Title from "../../components/Title/title";
 import { textLinks } from "./data";
 import { ReportsLinks } from "./props";
 

@@ -33,6 +33,8 @@
   /* нужно будет удалить стиль для времменого header */
 
   .headerContainer {
-    display: none;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin-bottom: 20px;
   }
 }

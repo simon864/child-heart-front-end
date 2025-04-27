@@ -1,4 +1,4 @@
-import Title from "../title/title";
+import Title from "../../components/Title/title";
 import boardStyle from "./boardPage.module.css";
 import { cardInfo } from "./data";
 import { PeopleCard } from "./props";

@@ -1,4 +1,4 @@
-import Title from "../title/title";
+import Title from "../../components/Title/title";
 import councilStyle from "./councilPage.module.css";
 import { text } from "./data";
 import { CouncilInfo } from "./props";

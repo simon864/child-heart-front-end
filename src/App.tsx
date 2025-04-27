@@ -1,6 +1,6 @@
 import appStyles from "./App.module.css";
 import "./common.css";
-import Footer from "./components/footer/footer";
+import Footer from "./components/Footer/footer";
 import { BrowserRouter } from "react-router-dom";
 import AppRouters from "./routes";
 import { Link } from "react-router-dom";
@@ -25,22 +25,25 @@ function Header() {
   return (
     <div className={appStyles.headerContainer}>
       <p>
-        <Link to={"/presidentPage"}>О президенте</Link>
+        <Link to={"/president-page"}>О президенте</Link>
       </p>
       <p>
-        <Link to={"/reportsPage"}>Отчеты и уставные документы</Link>
+        <Link to={"/reports-page"}>Отчеты и уставные документы</Link>
       </p>
       <p>
-        <Link to={"/objectivesPage"}>Цели и задачи фонда</Link>
+        <Link to={"/objectives-page"}>Цели и задачи фонда</Link>
       </p>
       <p>
-        <Link to={"/boardPage"}>Правление фонда</Link>
+        <Link to={"/board-page"}>Правление фонда</Link>
       </p>
       <p>
-        <Link to={"/councilPage"}>Попечительский совет</Link>
+        <Link to={"/council-page"}>Попечительский совет</Link>
       </p>
       <p>
-        <Link to={"/teamPage"}>Команда фонда</Link>
+        <Link to={"/team-page"}>Команда фонда</Link>
+      </p>
+      <p>
+        <Link to={"/program-page"}>Наши программы</Link>
       </p>
     </div>
   );

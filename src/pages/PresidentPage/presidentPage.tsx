@@ -3,7 +3,7 @@ import presidentPhoto from "..//..//assets/images/presidentPage/president-photo.
 import { text, award } from "./data";
 import { ParagraphInfo, AchievementCard } from "./props";
 import { useState } from "react";
-import Title from "../title/title";
+import Title from "../../components/Title/title";
 
 export default function PresidentPage() {
   return (

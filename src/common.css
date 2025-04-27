@@ -10,6 +10,17 @@
   flex-direction: column;
 }
 
+.carousel-container {
+  width: 320px;
+  height: fit-content;
+}
+
+@media (max-width: 340px) {
+  .carousel-container {
+    width: 300px;
+  }
+}
+
 @font-face {
   font-family: "TTnorms";
   src: url("./assets/fonts/TTNorms-Regular.woff2");
