@@ -1,0 +1,102 @@
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 105px;
+}
+
+.cardContainer {
+  display: flex;
+  gap: 25px;
+}
+
+.logoContainer img {
+  width: 320px;
+  height: 130px;
+  border-radius: 20px;
+}
+
+.textContainer {
+  font-family: "TTnorms";
+  display: flex;
+  height: 130px;
+  flex-direction: column;
+  gap: 10px;
+  color: #606060;
+  overflow: hidden;
+  position: relative;
+}
+
+.textContainer2 {
+  font-family: "TTnorms";
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #606060;
+}
+
+.textContainer::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(to bottom, transparent, white);
+}
+
+.titleText {
+  font-family: "TTnormsBold";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.readMoreContainer {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.readMoreButton {
+  font-family: "TTnorms";
+  border: none;
+  background-color: transparent;
+  color: #606060;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .contentContainer {
+    gap: 50px;
+  }
+  .cardContainer {
+    flex-direction: column;
+    display: flex;
+    width: 320px;
+    margin: auto;
+  }
+
+  .textContainer {
+    height: 270px;
+  }
+
+  .readMoreContainer {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 340px) {
+  .logoContainer img {
+    width: 300px;
+  }
+
+  .cardContainer {
+    width: 300px;
+  }
+}

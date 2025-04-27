@@ -6,17 +6,19 @@ import BoardPage from "./pages/BoardPage/boardPage";
 import CouncilPage from "./pages/CouncilPage/councilPage";
 import TeamPage from "./pages/TeamPage/teamPage";
 import ProgramPage from "./pages/ProgramsPage/programPage";
+import PhilanthropistsPage from "./pages/PhilanthropistsPage/PhilanthropistsPage";
 
 export default function AppRouters() {
   return (
     <Routes>
+      <Route path="*" element={<PresidentPage />} />
       <Route path="/Objectives-page" element={<ObjectivesPage />} />
-      <Route path="/president-page" element={<PresidentPage />} />
       <Route path="/reports-page" element={<ReportsPage />} />
       <Route path="/council-page" element={<CouncilPage />} />
-      <Route path="*" element={<TeamPage />} />
+      <Route path="/team-page" element={<TeamPage />} />
       <Route path="/board-page" element={<BoardPage />} />
       <Route path="/program-page" element={<ProgramPage />} />
+      <Route path="/philanthopists-page" element={<PhilanthropistsPage />} />
     </Routes>
   );
 }
@@ -27,3 +29,4 @@ export default function AppRouters() {
 // /board-page
 // /council-page
 // /team-page
+// /program-page

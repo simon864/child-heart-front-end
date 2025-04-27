@@ -45,6 +45,9 @@ function Header() {
       <p>
         <Link to={"/program-page"}>Наши программы</Link>
       </p>
+      <p>
+        <Link to={"/philanthopists-page"}>Наши благотворители</Link>
+      </p>
     </div>
   );
 }
