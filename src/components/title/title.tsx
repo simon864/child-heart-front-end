@@ -1,5 +1,5 @@
 import titleStyle from "./title.module.css";
-import qrCode from "../../assets/images/presidentPage/qr-code.png";
+import qrCode from "../../assets/images/common/qr-code.png";
 
 interface TitleProps {
   text: string;

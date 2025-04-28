@@ -1,5 +1,5 @@
 import footerStyle from "./footer.module.css";
-import logo from "../../assets/images/footer/logo.svg";
+import logo from "../../assets/images/common/logo.svg";
 import telegram from "../../assets/images/footer/telegram-logo.svg";
 import vk from "../../assets/images/footer/vk-logo.svg";
 import ok from "../../assets/images/footer/ok-logo.svg";
