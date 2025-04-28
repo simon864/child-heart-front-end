@@ -1,10 +1,14 @@
 .header {
+  position: relative;
   display: grid;
   grid-template-columns: auto 1fr;
-  max-width: 1000px;
+  width: auto;
   margin: 0 auto;
-  padding: 20px;
+  margin-top: 20px;
+  padding-left: 15%;
+  padding-right: 15%;
   align-items: start;
+  z-index: 1;
 }
 
 .logoContainer {
@@ -115,6 +119,9 @@
 }
 
 .helpNow {
+  width: 180px;
+  height: 60px;
+  font-size: 20px;
   background-color: #A8E3AE;
 }
 
@@ -123,6 +130,9 @@
 }
 
 .volunteer {
+  width: 180px;
+  height: 60px;
+  font-size: 20px;
   background-color: #FFDADA;
 }
 
@@ -148,7 +158,14 @@
   height: 100%;
 }
 
-@media (max-width: 875px) {
+@media (max-width: 767px) {
+  .header {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 1155px) {
   .header {
     display: flex;
     flex-wrap: wrap;

@@ -1,0 +1,288 @@
+.itemContainer {
+  width: 320px;
+  background-color: #F5F5F5;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+  
+.itemImage {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.itemImageAlt {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+  
+.contentContainer {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+   
+.nameYearContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+  
+.name, .year {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.historyContainer {
+  display: flex;
+  flex-direction: column;
+}
+  
+.history {
+  font-size: 16px;
+  color: #606060;
+  text-align: left;
+  display: block;
+  position: relative;
+  max-height: 5em;
+  overflow: hidden;
+}
+
+.historyEllipsis {
+  display: block;
+  text-align: left;
+}
+  
+.fundingContainer {
+  display: grid;
+  grid-template-columns: max-content auto;
+  column-gap: 20px;
+  row-gap: 5px;
+}
+  
+.fundingLabel {
+  font-size: 14px;
+  text-align: left;
+  white-space: nowrap;
+}
+  
+.fundingValue {
+  font-size: 14px;
+  text-align: left;
+}
+  
+.actionsContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+  
+.helpButton {
+  width: 140px;
+  height: 40px;
+  background-color: #A8E3AE;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+  
+.helpButton:hover {
+  background-color: #98D39E;
+}
+  
+.readStoryLink {
+  font-size: 16px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.singleImage {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.sectionContainer {
+  margin-top: 100px;
+  width: 100%;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.sectionTitle {
+  font-family: 'TTnormsBold';
+  font-size: 35px;
+  text-align: left;
+  margin: 0;
+}
+
+.readMoreLink {
+  font-family: 'TTnormsBold';
+  font-size: 20px;
+  text-decoration: underline;
+  color: #606060;
+  transition: color 0.3s ease;
+}
+
+.readMoreLink:hover {
+  color: #555;
+}
+
+.helpedCards, .newsCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.helpNeededCarousel, .ourProjectsCarousel {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.heroWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.heroContainer {
+  width: 100%;
+}
+
+.heroImage {
+  width: 100vw;
+  height: 0;
+  padding-bottom: 89.286%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-top: -121px;
+  margin-left: calc(-50vw + 50%);
+  z-index: 0;
+  border-radius: 50px;
+}
+
+.heroContent {
+  position: absolute;
+  top: 150px;
+  left: 15%;
+  right: 15%;
+  z-index: 1;
+}
+
+.contentBelow {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 1440px) {
+  .helpNeededCarousel {
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .sectionTitle {
+    font-size: 30px;
+  }
+  
+  .readMoreLink {
+    font-size: 18px;
+  }
+  
+  .sectionContainer {
+    margin: 80px 0 40px;
+  }
+  
+  .sectionHeader,
+  .helpedCards,
+  .newsCards {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sectionTitle {
+    font-size: 28px;
+  }
+  
+  .readMoreLink {
+    font-size: 16px;
+  }
+  
+  .sectionContainer {
+    margin: 70px 0 30px;
+  }
+  
+  .itemContainer {
+    width: 280px;
+  }
+  
+  .itemImage {
+    height: 280px;
+  }
+  
+  .sectionHeader,
+  .helpedCards,
+  .newsCards {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sectionHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 0 20px;
+  }
+  
+  .sectionTitle {
+    font-size: 24px;
+  }
+  
+  .helpedCards,
+  .newsCards {
+    padding: 0 20px;
+    gap: 15px;
+  }
+  
+  .heroImage {
+    margin-top: 0;
+    padding-bottom: 60%;
+    border-radius: 30px;
+  }
+  
+  .heroContent {
+    left: 20px;
+    right: 20px;
+    top: 100px;
+  }
+
+  .itemContainer {
+    width: 100%;
+    max-width: 320px;
+  }
+  
+  .itemImage {
+    height: auto;
+    aspect-ratio: 1/1;
+  }
+}

@@ -8,22 +8,23 @@
   src: url('./assets/fonts/ShantellSans-Regular.ttf');
 }
 
+@font-face {
+  font-family: "TTnormsBold";
+  src: url("./assets/fonts/TTNorms-Bold.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
   font-family: "TTnorms";
-} 
+}
 
 body {
   min-width: 400px;
 }
 
-.centerAlign {
+root {
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-self: center;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
-  align-items: center;
 }

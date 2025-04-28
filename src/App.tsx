@@ -1,13 +1,26 @@
+import appStyles from './App.module.css'
 import './Common.css'
-import IndexPage from './components/index-page/indexPage'
+import Header from './components/header/Header'
+import { BrowserRouter } from 'react-router-dom'
+import AppRouters from './routes'
 
-function App() {
+export default function App() {
 
   return (
     <>
-    <IndexPage/>
+    <BrowserRouter>
+      <Header/>
+      <main className={appStyles.mainContainer}>
+        <AppRouters/>
+      </main>
+    </BrowserRouter>
+    <Footer/>
     </>
   )
 }
 
-export default App
+// Remove later
+
+function Footer() {
+  return (<></>)
+}

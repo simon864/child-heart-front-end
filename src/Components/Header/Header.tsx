@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
-import styles from './header.module.css';
-import logo from '../../assets/images/logo.svg';
-import dropdown from '../../assets/images/dropdown.svg';
-import hamburgerIcon from '../../assets/images/hamburger.svg';
+import styles from './Header.module.css'
+import logo from '../../assets/images/common/logo.svg';
+import dropdown from '../../assets/images/icons/dropdown.svg';
+import hamburgerIcon from '../../assets/images/icons/hamburger.svg';
+import { Link } from 'react-router-dom';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,8 +28,8 @@ const Header: React.FC = () => {
   };
 
   useEffect(() => {
-    document.addEventListener('click', handleClickOutside); // replace later (allegedly useRef)
-    return () => document.removeEventListener('click', handleClickOutside); // replace later (allegedly useRef)
+    window.addEventListener('click', handleClickOutside);
+    return () => window.removeEventListener('click', handleClickOutside);
   }, []);
 
   return (
@@ -44,7 +45,7 @@ const Header: React.FC = () => {
 
       <div className={styles.rightSection}>
         <div className={`${styles.navigationItems} ${isMenuOpen ? styles.active : ''}`} ref={navRef}>
-          <a href='#'>Главная</a>
+          <a><Link to={"/"}>Главная</Link></a>
 
           <div className={styles.dropdownList}>
           <button 
@@ -55,18 +56,18 @@ const Header: React.FC = () => {
               <img src={dropdown} alt="" className={styles.dropdownIcon} />
             </button>
             <div className={`${styles.dropdownItems} ${openDropdown === 'nav2' ? styles.active : ''}`}>
-              <a href='#'>О президенте фонда</a>
-              <a href='#'>Цели и задачи</a>
-              <a href='#'>История</a>
-              <a href='#'>Правление</a>
-              <a href='#'>Попечительский совет</a>
-              <a href='#'>Команда</a>
-              <a href='#'>Наши благотвориели</a>
-              <a href='#'>Программы фонда</a>
+              <a><Link to={"/HomePage"}>О президенте фонда</Link></a>
+              <a><Link to={"/HomePage"}>Цели и задачи</Link></a>
+              <a><Link to={"/HomePage"}>История</Link></a>
+              <a><Link to={"/HomePage"}>Правление</Link></a>
+              <a><Link to={"/HomePage"}>Попечительский совет</Link></a>
+              <a><Link to={"/HomePage"}>Команда</Link></a>
+              <a><Link to={"/HomePage"}>Наши благотвориели</Link></a>
+              <a><Link to={"/HomePage"}>Программы фонда</Link></a>
             </div>
           </div>
 
-          <a href='#'>Наши проекты</a>
+          <a><Link to={"/HomePage"}>Наши проекты</Link></a>
 
           <div className={styles.dropdownList}>
           <button 
@@ -77,14 +78,14 @@ const Header: React.FC = () => {
               <img src={dropdown} alt="" className={styles.dropdownIcon} />
             </button>
             <div className={`${styles.dropdownItems} ${openDropdown === 'nav4' ? styles.active : ''}`}>
-              <a href='#'>Реквизиты</a>
-              <a href='#'>Стать волонтером</a>
-              <a href='#'>Ящики для благотворительности</a>
-              <a href='#'>Возврат НДФЛ</a>
+              <a><Link to={"/HomePage"}>Реквизиты</Link></a>
+              <a><Link to={"/HomePage"}>Стать волонтером</Link></a>
+              <a><Link to={"/HomePage"}>Ящики для благотворительности</Link></a>
+              <a><Link to={"/HomePage"}>Возврат НДФЛ</Link></a>
             </div>
           </div>
 
-          <a href='#'>Контакты</a>
+          <a><Link to={"/HomePage"}>Контакты</Link></a>
         </div>
 
         <div className={styles.headerButtons}>
