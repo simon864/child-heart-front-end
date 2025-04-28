@@ -1,30 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel-container {
+  width: 320px;
+  height: fit-content;
+}
+
+@media (max-width: 340px) {
+  .carousel-container {
+    width: 300px;
+  }
+}
+
 @font-face {
   font-family: "TTnorms";
-  src: url('./assets/fonts/TTNorms-Regular.woff2');
+  src: url("./assets/fonts/TTNorms-Regular.woff2");
 }
 
 @font-face {
   font-family: "SS";
-  src: url('./assets/fonts/ShantellSans-Regular.ttf');
+  src: url("./assets/fonts/ShantellSans-Regular.ttf");
 }
 
 @font-face {
   font-family: "TTnormsBold";
   src: url("./assets/fonts/TTNorms-Bold.ttf");
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "TTnorms";
-}
-
-body {
-  min-width: 400px;
-}
-
-root {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
 }

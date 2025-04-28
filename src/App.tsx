@@ -1,6 +1,6 @@
 import appStyles from './App.module.css'
 import './Common.css'
-import Header from './components/header/Header'
+import Header from './сomponents/Header/Header'
 import { BrowserRouter } from 'react-router-dom'
 import AppRouters from './routes'
 
@@ -17,10 +17,4 @@ export default function App() {
     <Footer/>
     </>
   )
-}
-
-// Remove later
-
-function Footer() {
-  return (<></>)
 }

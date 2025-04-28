@@ -1,7 +1,7 @@
 import { HelpNeeded, OurProjects, Helped, News } from './data';
 import HeroBackground, { HelpNeededItem, OurProjectsItem, HelpedItem, NewsItem } from './Props';
-import ResponsiveCarousel, { Caorusel } from '../carousel/Carousel';
-import Title from '../title/title';
+import ResponsiveCarousel, { Caorusel } from '../../сomponents/CarouselHome/CarouselHome'
+import Title from '../../сomponents/Title/title'
 import styles from './HomePage.module.css'
 import background from '../../assets/images/home-page/background.png'
 
@@ -30,8 +30,7 @@ function HelpNeededCarousel() {
   return (
     <div className={styles.sectionContainer}>
       <div className={styles.sectionHeader}>
-        <h2 className={styles.sectionTitle}>Нужна помощь</h2>
-        <a href="#" className={styles.readMoreLink}>Читать больше</a>
+        <h2 className={styles.sectionTitle}>Сейчас ваша помощь нужна</h2>
       </div>
       <div className={styles.helpNeededCarousel}>
         <ResponsiveCarousel>
@@ -56,8 +55,8 @@ function HelpedCards() {
   return(
     <div className={styles.sectionContainer}>
       <div className={styles.sectionHeader}>
-        <h2 className={styles.sectionTitle}>Помогли</h2>
-        <a href="#" className={styles.readMoreLink}>Читать больше</a>
+        <h2 className={styles.sectionTitle}>Спасеные сердца</h2>
+        <a className={styles.readMoreLink}>Все дети, которым вы помогли</a>
       </div>
       <div className={styles.helpedCards}>
         {Helped.map((Helped) => (
@@ -78,7 +77,7 @@ function OurProjectsCarousel() {
     <div className={styles.sectionContainer}>
       <div className={styles.sectionHeader}>
         <h2 className={styles.sectionTitle}>Наши проекты</h2>
-        <a href="#" className={styles.readMoreLink}>Читать больше</a>
+        <a className={styles.readMoreLink}>Смотреть все проекты</a>
       </div>
       <div className={styles.ourProjectsCarousel}>
         <Caorusel>
@@ -98,8 +97,8 @@ function NewsCards() {
   return(
     <div className={styles.sectionContainer}>
       <div className={styles.sectionHeader}>
-        <h2 className={styles.sectionTitle}>Новости</h2>
-        <a href="#" className={styles.readMoreLink}>Читать больше</a>
+        <h2 className={styles.sectionTitle}>Последние новости</h2>
+        <a className={styles.readMoreLink}>Смотреть все новости</a>
       </div>
       <div className={styles.newsCards}>
         {News.map((News) => (
