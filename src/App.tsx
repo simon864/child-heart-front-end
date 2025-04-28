@@ -3,6 +3,7 @@ import './Common.css'
 import Header from './сomponents/Header/Header'
 import { BrowserRouter } from 'react-router-dom'
 import AppRouters from './routes'
+import Footer from './components/footer/footer'
 
 export default function App() {
 
