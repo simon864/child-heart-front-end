@@ -35,7 +35,9 @@ function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.logoContainer}>
-        <img src={logo} className={styles.logo} />
+        <Link to={""}>
+        <img src={logo} className={styles.logoImage} />
+        </Link>
         <p className={styles.logoText}>
           <span>Кузбасский </span>
           <span>благотворительный </span>
@@ -45,7 +47,7 @@ function Header() {
 
       <div className={styles.rightSection}>
         <div className={`${styles.navigationItems} ${isMenuOpen ? styles.active : ''}`} ref={navRef}>
-          <a><Link to={"/HomePage"}>Главная</Link></a>
+          <Link to={""}>Главная</Link>
 
           <div className={styles.dropdownList}>
           <button 
@@ -56,19 +58,19 @@ function Header() {
               <img src={dropdown} alt="" className={styles.dropdownIcon} />
             </button>
             <div className={`${styles.dropdownItems} ${openDropdown === 'nav2' ? styles.active : ''}`}>
-              <a><Link to={"/president-page"}>О президенте фонда</Link></a>
-              <a><Link to={"/objectives-page"}>Цели и задачи</Link></a>
-              <a><Link to={""}>История</Link></a>
-              <a><Link to={"/board-page"}>Правление</Link></a>
-              <a><Link to={"/council-page"}>Попечительский совет</Link></a>
-              <a><Link to={"/team-page"}>Команда</Link></a>
-              <a><Link to={"/philanthopists-page"}>Наши благотвориели</Link></a>
-              <a><Link to={"/program-page"}>Программы фонда</Link></a>
-              <a><Link to={"/reports-page"}>Отчеты и документы</Link></a>
+              <Link to={"/president-page"}>О президенте фонда</Link>
+              <Link to={"/objectives-page"}>Цели и задачи</Link>
+              <Link to={"#"}>История</Link>
+              <Link to={"/board-page"}>Правление</Link>
+              <Link to={"/council-page"}>Попечительский совет</Link>
+              <Link to={"/team-page"}>Команда</Link>
+              <Link to={"/philanthopists-page"}>Наши благотвориели</Link>
+              <Link to={"/program-page"}>Программы фонда</Link>
+              <Link to={"/reports-page"}>Отчеты и документы</Link>
             </div>
           </div>
 
-          <a><Link to={""}>Наши проекты</Link></a>
+          <Link to={"#"}>Наши проекты</Link>
 
           <div className={styles.dropdownList}>
           <button 
@@ -79,14 +81,14 @@ function Header() {
               <img src={dropdown} alt="" className={styles.dropdownIcon} />
             </button>
             <div className={`${styles.dropdownItems} ${openDropdown === 'nav4' ? styles.active : ''}`}>
-              <a><Link to={""}>Реквизиты</Link></a>
-              <a><Link to={""}>Стать волонтером</Link></a>
-              <a><Link to={""}>Ящики для благотворительности</Link></a>
-              <a><Link to={""}>Возврат НДФЛ</Link></a>
+              <Link to={"#"}>Реквизиты</Link>
+              <Link to={"#"}>Стать волонтером</Link>
+              <Link to={"#"}>Ящики для благотворительности</Link>
+              <Link to={"#"}>Возврат НДФЛ</Link>
             </div>
           </div>
 
-          <a><Link to={""}>Контакты</Link></a>
+          <Link to={"#"}>Контакты</Link>
         </div>
 
         <div className={styles.headerButtons}>

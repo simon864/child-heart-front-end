@@ -4,6 +4,7 @@ import ResponsiveCarousel, { Caorusel } from '../../сomponents/CarouselHome/Car
 import Title from '../../сomponents/Title/title'
 import styles from './HomePage.module.css'
 import background from '../../assets/images/home-page/background.png'
+import { Link } from 'react-router-dom';
 
 function HomePage() {
   return (
@@ -56,7 +57,7 @@ function HelpedCards() {
     <div className={styles.sectionContainer}>
       <div className={styles.sectionHeader}>
         <h2 className={styles.sectionTitle}>Спасеные сердца</h2>
-        <a className={styles.readMoreLink}>Все дети, которым вы помогли</a>
+        <Link className={styles.readMoreLink} to={"#"}>Все дети, которым вы помогли</Link>
       </div>
       <div className={styles.helpedCards}>
         {Helped.map((Helped) => (
@@ -77,7 +78,7 @@ function OurProjectsCarousel() {
     <div className={styles.sectionContainer}>
       <div className={styles.sectionHeader}>
         <h2 className={styles.sectionTitle}>Наши проекты</h2>
-        <a className={styles.readMoreLink}>Смотреть все проекты</a>
+        <Link className={styles.readMoreLink} to={"#"}>Смотреть все проекты</Link>
       </div>
       <div className={styles.ourProjectsCarousel}>
         <Caorusel>
@@ -98,7 +99,7 @@ function NewsCards() {
     <div className={styles.sectionContainer}>
       <div className={styles.sectionHeader}>
         <h2 className={styles.sectionTitle}>Последние новости</h2>
-        <a className={styles.readMoreLink}>Смотреть все новости</a>
+        <Link className={styles.readMoreLink} to={"#"}>Смотреть все новости</Link>
       </div>
       <div className={styles.newsCards}>
         {News.map((News) => (

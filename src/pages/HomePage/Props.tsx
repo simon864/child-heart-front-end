@@ -66,7 +66,7 @@ export function HelpNeededItem({
   const remaining = toCollect - collected;
 
   return (
-    <div className={styles.itemContainer}>
+    <div className={styles.itemContainerHelp}>
       <img 
         src={image}
         className={styles.itemImageAlt}

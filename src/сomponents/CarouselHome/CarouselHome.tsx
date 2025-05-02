@@ -17,7 +17,7 @@ export default function ResponsiveCarousel({ children }: CaoruselProps) {
         arrows: false,
         responsive: [
           {
-            breakpoint: 1440,
+            breakpoint: 1460,
             settings: {
               slidesToShow: 2,
               slidesToScroll: 2,
@@ -25,7 +25,7 @@ export default function ResponsiveCarousel({ children }: CaoruselProps) {
             }
           },
           {
-            breakpoint: 960,
+            breakpoint: 975,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1

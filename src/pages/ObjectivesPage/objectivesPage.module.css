@@ -1,0 +1,112 @@
+.directionsContainer {
+  display: grid;
+  grid-template-columns: 32% 1fr 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+
+.directionsCard {
+  font-family: "TTnorms";
+  display: flex;
+  align-items: center;
+  border: 1px solid #f5f5f5;
+  border-radius: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
+  line-height: 20px;
+  color: #606060;
+  height: 160px;
+}
+
+.directionsCard:first-child {
+  font-family: "TTnormsBold";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+  background-color: #a8e3ae;
+  text-align: center;
+  justify-content: center;
+}
+
+.tasksContainer {
+  display: flex;
+}
+
+.imgContainer img {
+  width: 320px;
+  height: 450px;
+  border-radius: 20px;
+}
+
+.textContainer {
+  font-family: "TTNorms";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 20px;
+  color: #606060;
+}
+
+.textContainer p {
+  font-family: "TTnormsBold";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.textContainer ul {
+  margin-left: 45px;
+}
+
+@media (min-width: 1440px) {
+  .directionsCard {
+    height: 120px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .directionsContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .directionsCard {
+    height: 100px;
+  }
+
+  .directionsCard:first-child {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .tasksContainer {
+    flex-direction: column;
+  }
+
+  .imgContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .directionsCard:first-child {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .imgContainer {
+    display: none;
+  }
+
+  .textContainer p {
+    text-align: center;
+  }
+}
