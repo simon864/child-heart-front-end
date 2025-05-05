@@ -187,7 +187,7 @@
 
 .heroContent {
   position: absolute;
-  top: 150px;
+  top: 130px;
   left: 15%;
   right: 15%;
   z-index: 1;
@@ -235,7 +235,7 @@
   .heroImage {
     width: calc(100% + 20px);
     margin-left: -10px;
-    margin-top: 100px;
+    margin-top: 50px;
     padding-bottom: 60%;
     border-radius: 30px;
   }
@@ -249,7 +249,7 @@
 
 @media (max-width: 602px) {
   .heroImage {
-    margin-top: 135px;
+    margin-top: 85px;
   }
 
   .heroContent {
@@ -259,7 +259,7 @@
 
 @media (max-width: 350px) {
   .heroImage {
-    margin-top: 170px;
+    margin-top: 120px;
   }
 
   .heroContent {

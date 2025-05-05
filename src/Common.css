@@ -12,6 +12,11 @@
   min-width: 320px;
 }
 
+a {
+  all: unset;
+  cursor: pointer;
+}
+
 .carousel-container {
   width: 320px;
   height: fit-content;

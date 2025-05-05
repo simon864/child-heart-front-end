@@ -1,4 +1,4 @@
-import Title from "../../components/Title/title";
+import Title from "../../components/title/title";
 import programsStyle from "./programPage.module.css";
 import { imageArr, textArr } from "./data";
 import { ImagesCard, TextCard } from "./props";

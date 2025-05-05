@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import styles from './Header.module.css'
+import styles from './header.module.css'
 import logo from '../../assets/images/common/logo.svg';
 import dropdown from '../../assets/images/icons/dropdown.svg';
 import hamburgerIcon from '../../assets/images/icons/hamburger.svg';
@@ -38,11 +38,11 @@ function Header() {
         <Link to={""}>
         <img src={logo} className={styles.logoImage} />
         </Link>
-        <p className={styles.logoText}>
+        <Link to={""} className={styles.logoText}>
           <span>Кузбасский </span>
           <span>благотворительный </span>
           <span>фонд </span>
-        </p>
+        </Link>
       </div>
 
       <div className={styles.rightSection}>
@@ -70,7 +70,7 @@ function Header() {
             </div>
           </div>
 
-          <Link to={"#"}>Наши проекты</Link>
+          <Link to={"/projects-page"}>Наши проекты</Link>
 
           <div className={styles.dropdownList}>
           <button 

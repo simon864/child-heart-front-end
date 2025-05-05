@@ -1,5 +1,5 @@
 import philanthropistsStyles from "./PhilanthropistsPage.module.css";
-import Title from "../../components/Title/title";
+import Title from "../../components/title/title";
 import { philanthopistsArr } from "./data";
 import { PhilanthropistCard } from "./props";
 

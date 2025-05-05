@@ -24,7 +24,7 @@
 
 .logoText {
   margin: 10px 0 0;
-  font-size: 16px;
+  font-size: 13px;
 }
 
 .logoText span {
@@ -106,6 +106,7 @@
 .headerButtons {
   display: flex;
   gap: 20px;
+  margin-bottom: 20px;
 }
 
 .buttonSecondary {
@@ -154,12 +155,7 @@
   height: 100%;
 }
 
-@media (max-width: 1160px) {
-
-  .logoText {
-    font-size: 13px;
-  }
-
+@media (max-width: 1100px) {
   .navigationItems {
     font-size: 13px;
     gap: 15px
@@ -171,7 +167,6 @@
 }
 
 @media (max-width: 965px) {
-
   .headerButtons {
     gap: 15px
   }
@@ -201,6 +196,7 @@
     display: flex;
     flex-direction: column;
     margin: 0;
+    margin-left: calc(50% - 130px);
     font-size: 13px;
   }
   
@@ -293,10 +289,27 @@
   .buttonSecondary {
     width: calc(50vw - 17.5px);
   }
+
+  .headerButtons {
+    margin-bottom: 50px;
+  }
+
+  .logoText {
+    margin-left: calc(50% - 125px);
+    font-size: 10px;
+  }
 }
 
 @media (max-width: 360px) {
   .logoImage {
     width: 115px;
+  }
+
+  .logoText {
+    margin-left: calc(50% - 95px);
+  }
+
+  .hamburger {
+    width: 40px;
   }
 }
