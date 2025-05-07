@@ -1,30 +1,37 @@
-import { HelpNeeded, OurProjects, Helped, News } from './data';
-import HeroBackground, { HelpNeededItem, OurProjectsItem, HelpedItem, NewsItem } from './Props';
-import ResponsiveCarousel, { Caorusel } from '../../сomponents/CarouselHome/CarouselHome'
-import Title from '../../сomponents/Title/title'
-import styles from './HomePage.module.css'
-import background from '../../assets/images/home-page/background.png'
+import { HelpNeeded, OurProjects, Helped, News } from "./data";
+import HeroBackground, {
+  HelpNeededItem,
+  OurProjectsItem,
+  HelpedItem,
+  NewsItem,
+} from "./Props";
+import ResponsiveCarousel, {
+  Caorusel,
+} from "../../components/CarouselHome/CarouselHome";
+import Title from "../../components/Title/title";
+import styles from "./HomePage.module.css";
+import background from "../../assets/images/home-page/background.png";
 
 function HomePage() {
   return (
     <>
-    <HeroBackground 
+      <HeroBackground
         imageUrl={background}
         contentBelow={
           <div className={styles.centerAlign}>
-            <HelpNeededCarousel/>
-            <HelpedCards/>
-            <OurProjectsCarousel/>
-            <NewsCards/>
+            <HelpNeededCarousel />
+            <HelpedCards />
+            <OurProjectsCarousel />
+            <NewsCards />
           </div>
         }
       >
-        <Title text="Возвращаем здоровье детским сердцам"/>
+        <Title text="Возвращаем здоровье детским сердцам" />
       </HeroBackground>
     </>
-  )
+  );
 }
-export default HomePage
+export default HomePage;
 
 function HelpNeededCarousel() {
   return (
@@ -48,11 +55,11 @@ function HelpNeededCarousel() {
         </ResponsiveCarousel>
       </div>
     </div>
-  )
+  );
 }
 
 function HelpedCards() {
-  return(
+  return (
     <div className={styles.sectionContainer}>
       <div className={styles.sectionHeader}>
         <h2 className={styles.sectionTitle}>Спасеные сердца</h2>
@@ -69,11 +76,11 @@ function HelpedCards() {
         ))}
       </div>
     </div>
-  )
+  );
 }
 
 function OurProjectsCarousel() {
-  return(
+  return (
     <div className={styles.sectionContainer}>
       <div className={styles.sectionHeader}>
         <h2 className={styles.sectionTitle}>Наши проекты</h2>
@@ -90,11 +97,11 @@ function OurProjectsCarousel() {
         </Caorusel>
       </div>
     </div>
-  )
+  );
 }
 
 function NewsCards() {
-  return(
+  return (
     <div className={styles.sectionContainer}>
       <div className={styles.sectionHeader}>
         <h2 className={styles.sectionTitle}>Последние новости</h2>
@@ -111,5 +118,5 @@ function NewsCards() {
         ))}
       </div>
     </div>
-  )
+  );
 }

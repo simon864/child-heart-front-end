@@ -8,7 +8,6 @@ import CouncilPage from "./pages/CouncilPage/councilPage";
 import TeamPage from "./pages/TeamPage/teamPage";
 import ProgramPage from "./pages/ProgramsPage/programPage";
 import PhilanthropistsPage from "./pages/PhilanthropistsPage/PhilanthropistsPage";
-import ProjectsPage from "./pages/ProjectsPage/ProjectsPage";
 
 export default function AppRouters() {
   return (
@@ -22,7 +21,6 @@ export default function AppRouters() {
       <Route path="/board-page" element={<BoardPage />} />
       <Route path="/program-page" element={<ProgramPage />} />
       <Route path="/philanthopists-page" element={<PhilanthropistsPage />} />
-      <Route path="/project-page" element={<ProjectsPage />} />
     </Routes>
   );
 }
