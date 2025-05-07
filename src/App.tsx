@@ -1,12 +1,11 @@
-import appStyles from './App.module.css'
-import './Common.css'
-import Header from './сomponents/Header/Header'
-import { BrowserRouter } from 'react-router-dom'
-import AppRouters from './routes'
-import Footer from './components/footer/footer'
+import appStyles from "./App.module.css";
+import "./Common.css";
+import Header from "./сomponents/Header/Header";
+import { BrowserRouter } from "react-router-dom";
+import AppRouters from "./routes";
+import Footer from "./components/Footer/footer";
 
 export default function App() {
-
   return (
     <>
       <BrowserRouter>
@@ -17,5 +16,5 @@ export default function App() {
       </BrowserRouter>
       <Footer />
     </>
-  )
+  );
 }
