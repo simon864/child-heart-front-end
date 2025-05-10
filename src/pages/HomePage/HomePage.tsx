@@ -76,7 +76,7 @@ function OurProjectsCarousel() {
     <div className={styles.sectionContainer}>
       <div className={styles.sectionHeader}>
         <h2 className={styles.sectionTitle}>Наши проекты</h2>
-        <Link className={styles.readMoreLink} to={"#"}>Смотреть все проекты</Link>
+        <Link className={styles.readMoreLink} to={"/projects-page"}>Смотреть все проекты</Link>
       </div>
       <div className={styles.ourProjectsCarousel}>
         <Caorusel>
