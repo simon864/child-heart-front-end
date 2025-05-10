@@ -2,12 +2,19 @@
   margin: 0;
   padding: 0;
   -webkit-tap-highlight-color: transparent;
+  font-family: "TTnorms";
 }
 
 #root {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  min-width: 320px;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
 }
 
 .carousel-container {
