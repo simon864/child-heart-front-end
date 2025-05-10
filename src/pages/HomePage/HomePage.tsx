@@ -1,15 +1,16 @@
 import { HelpNeeded, OurProjects, Helped, News } from './data';
 import HeroBackground, { HelpNeededItem, OurProjectsItem, HelpedItem, NewsItem } from './Props';
-import ResponsiveCarousel, { Caorusel } from '../../сomponents/CarouselHome/CarouselHome'
-import Title from '../../сomponents/Title/title'
+import ResponsiveCarousel, { Caorusel } from '../../components/CarouselHome/CarouselHome'
+import Title from '../../components/title/title';
 import styles from './HomePage.module.css'
 import background from '../../assets/images/home-page/background.png'
+import { Link } from 'react-router-dom';
 
 function HomePage() {
   return (
     <>
     <HeroBackground 
-        imageUrl={background}
+        image={background}
         contentBelow={
           <div className={styles.centerAlign}>
             <HelpNeededCarousel/>
@@ -36,7 +37,6 @@ function HelpNeededCarousel() {
         <ResponsiveCarousel>
           {HelpNeeded.map((HelpNeeded) => (
             <HelpNeededItem
-              key={HelpNeeded.name}
               name={HelpNeeded.name}
               year={HelpNeeded.year}
               history={HelpNeeded.history}
@@ -56,12 +56,11 @@ function HelpedCards() {
     <div className={styles.sectionContainer}>
       <div className={styles.sectionHeader}>
         <h2 className={styles.sectionTitle}>Спасеные сердца</h2>
-        <a className={styles.readMoreLink}>Все дети, которым вы помогли</a>
+        <Link className={styles.readMoreLink} to={"#"}>Все дети, которым вы помогли</Link>
       </div>
       <div className={styles.helpedCards}>
         {Helped.map((Helped) => (
           <HelpedItem
-            key={Helped.name}
             name={Helped.name}
             year={Helped.year}
             image={Helped.image}
@@ -77,13 +76,12 @@ function OurProjectsCarousel() {
     <div className={styles.sectionContainer}>
       <div className={styles.sectionHeader}>
         <h2 className={styles.sectionTitle}>Наши проекты</h2>
-        <a className={styles.readMoreLink}>Смотреть все проекты</a>
+        <Link className={styles.readMoreLink} to={"/projects-page"}>Смотреть все проекты</Link>
       </div>
       <div className={styles.ourProjectsCarousel}>
         <Caorusel>
           {OurProjects.map((OurProjects) => (
             <OurProjectsItem
-              key={OurProjects.image}
               image={OurProjects.image}
             />
           ))}
@@ -98,12 +96,11 @@ function NewsCards() {
     <div className={styles.sectionContainer}>
       <div className={styles.sectionHeader}>
         <h2 className={styles.sectionTitle}>Последние новости</h2>
-        <a className={styles.readMoreLink}>Смотреть все новости</a>
+        <Link className={styles.readMoreLink} to={"#"}>Смотреть все новости</Link>
       </div>
       <div className={styles.newsCards}>
         {News.map((News) => (
           <NewsItem
-            key={News.headline}
             date={News.date}
             headline={News.headline}
             image={News.image}

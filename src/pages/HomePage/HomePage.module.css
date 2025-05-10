@@ -1,23 +1,30 @@
-.itemContainer {
-  width: 320px;
+.itemContainer, .itemContainerHelp {
+  width: calc((70vw / 3) - 20px);
   background-color: #F5F5F5;
   border-radius: 20px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
 }
+
+.itemContainerHelp {
+  margin-left: 10px;
+}
   
 .itemImage {
   width: 100%;
-  height: 230px;
+  height: 340px;
   object-fit: cover;
+  object-position: 50% 0;
   border-radius: 20px 20px 0 0;
 }
 
 .itemImageAlt {
   width: 100%;
-  height: 320px;
+  height: 340px;
+  top: 0;
   object-fit: cover;
+  object-position: 50% 0;
   border-radius: 20px 20px 0 0;
 }
   
@@ -51,7 +58,7 @@
   text-align: left;
   display: block;
   position: relative;
-  max-height: 5em;
+  max-height: 76px;
   overflow: hidden;
 }
 
@@ -88,7 +95,7 @@
 }
   
 .helpButton {
-  width: 140px;
+  width: calc(70% - 60px);
   height: 40px;
   background-color: #A8E3AE;
   border: none;
@@ -136,7 +143,7 @@
   font-size: 20px;
   text-decoration: underline;
   color: #606060;
-  transition: color 0.3s ease;
+  text-align: right;
 }
 
 .readMoreLink:hover {
@@ -145,15 +152,14 @@
 
 .helpedCards, .newsCards {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  justify-content: space-between;
   box-sizing: border-box;
+  flex-wrap: wrap;
+  row-gap: 25px;
 }
 
 .helpNeededCarousel, .ourProjectsCarousel {
-  max-width: 1000px;
-  margin: 0 auto;
+  margin: 0;
   width: 100%;
 }
 
@@ -167,21 +173,21 @@
 }
 
 .heroImage {
-  width: 100vw;
+  width: calc(100% / 70 * 100);
   height: 0;
   padding-bottom: 89.286%;
   background-size: cover;
   background-position: center;
   position: relative;
-  margin-top: -121px;
-  margin-left: calc(-50vw + 50%);
+  margin-top: -125px;
+  margin-left: calc(-100% / 70 * 15);
   z-index: 0;
   border-radius: 50px;
 }
 
 .heroContent {
   position: absolute;
-  top: 150px;
+  top: 130px;
   left: 15%;
   right: 15%;
   z-index: 1;
@@ -189,32 +195,22 @@
 
 .contentBelow {
   position: relative;
-  z-index: 1;
+  z-index: 0;
 }
 
-@media (max-width: 1440px) {
-  .helpNeededCarousel {
-    max-width: 1000px;
+@media (max-width: 1460px) {
+  .itemContainerHelp {
+    width: calc(35vw - 20px)
   }
 }
 
-@media (max-width: 1024px) {
-  .sectionTitle {
-    font-size: 30px;
+@media (max-width: 975px) {
+  .itemContainerHelp {
+    width: calc(100% - 20px);
   }
-  
-  .readMoreLink {
-    font-size: 18px;
-  }
-  
-  .sectionContainer {
-    margin: 80px 0 40px;
-  }
-  
-  .sectionHeader,
-  .helpedCards,
-  .newsCards {
-    padding: 0 40px;
+
+  .itemContainer {
+    width: 100%;
   }
 }
 
@@ -227,45 +223,19 @@
     font-size: 16px;
   }
   
-  .sectionContainer {
-    margin: 70px 0 30px;
-  }
-  
-  .itemContainer {
-    width: 280px;
-  }
-  
-  .itemImage {
-    height: 280px;
-  }
-  
-  .sectionHeader,
-  .helpedCards,
-  .newsCards {
-    padding: 0 30px;
-  }
-}
-
-@media (max-width: 480px) {
-  .sectionHeader {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    padding: 0 20px;
-  }
-  
   .sectionTitle {
     font-size: 24px;
   }
   
   .helpedCards,
   .newsCards {
-    padding: 0 20px;
-    gap: 15px;
+    padding: 0;
   }
   
   .heroImage {
-    margin-top: 0;
+    width: calc(100% + 20px);
+    margin-left: -10px;
+    margin-top: 50px;
     padding-bottom: 60%;
     border-radius: 30px;
   }
@@ -273,16 +243,26 @@
   .heroContent {
     left: 20px;
     right: 20px;
-    top: 100px;
+    top: -50px;
+  }
+}
+
+@media (max-width: 602px) {
+  .heroImage {
+    margin-top: 85px;
   }
 
-  .itemContainer {
-    width: 100%;
-    max-width: 320px;
+  .heroContent {
+    top: -85px;
   }
-  
-  .itemImage {
-    height: auto;
-    aspect-ratio: 1/1;
+}
+
+@media (max-width: 350px) {
+  .heroImage {
+    margin-top: 120px;
+  }
+
+  .heroContent {
+    top: -120px;
   }
 }

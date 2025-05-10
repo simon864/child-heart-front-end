@@ -22,7 +22,7 @@ export default function AppRouters() {
       <Route path="/board-page" element={<BoardPage />} />
       <Route path="/program-page" element={<ProgramPage />} />
       <Route path="/philanthopists-page" element={<PhilanthropistsPage />} />
-      <Route path="/project-page" element={<ProjectsPage />} />
+      <Route path="/projects-page" element={<ProjectsPage />} />
     </Routes>
   );
 }

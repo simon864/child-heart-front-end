@@ -1,0 +1,12 @@
+.projectImage {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    .projectImage {
+        width: calc(100% + 20px);
+        margin-left: -10px;
+    }
+}

@@ -1,9 +1,10 @@
-import styles from './HomePage.module.css'
+import { Link } from "react-router-dom";
+import styles from "./HomePage.module.css"
 
 interface BackgroundProps {
   children?: React.ReactNode;
   contentBelow?: React.ReactNode;
-  imageUrl: string;
+  image: string;
 }
 
 interface HelpNeededProps {
@@ -34,14 +35,14 @@ interface NewsProps {
 export default function HeroBackground ({ 
   children, 
   contentBelow,
-  imageUrl 
+  image 
 } : BackgroundProps) {
   return (
     <div className={styles.heroWrapper}>
       <div className={styles.heroContainer}>
         <div 
           className={styles.heroImage}
-          style={{ backgroundImage: `url(${imageUrl})` }}
+          style={{ backgroundImage: `url(${image})` }}
         >
           <div className={styles.heroContent}>
             {children}
@@ -66,7 +67,7 @@ export function HelpNeededItem({
   const remaining = toCollect - collected;
 
   return (
-    <div className={styles.itemContainer}>
+    <div className={styles.itemContainerHelp}>
       <img 
         src={image}
         className={styles.itemImageAlt}
@@ -97,8 +98,8 @@ export function HelpNeededItem({
         </div>
         
         <div className={styles.actionsContainer}>
-          <button className={styles.helpButton}>Хочу помочь</button>
-          <span className={styles.readStoryLink}>Читать историю</span>
+          <button className={styles.helpButton}><Link to={"#"}>Хочу помочь</Link></button>
+          <span className={styles.readStoryLink}><Link to={"#"}>Читать историю</Link></span>
         </div>
       </div>
     </div>
@@ -129,10 +130,12 @@ export function HelpedItem({ name, year, image }: HelpedProps) {
 
 export function OurProjectsItem({image}: OurProjectsProps) {
   return (
+    <Link to={"#"}>
     <img
       src={image}
       className={styles.singleImage}
     />
+    </Link>
   )
 }
 

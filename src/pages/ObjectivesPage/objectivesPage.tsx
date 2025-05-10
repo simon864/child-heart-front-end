@@ -1,5 +1,5 @@
 import objectivesStyle from "./objectivesPage.module.css";
-import Title from "../../components/Title/title";
+import Title from "../../components/title/title";
 import { DirectionsCard, TasksInfo } from "./props";
 import { directionsText, tasksText } from "./data";
 import testImg from "../../assets/images/objectivesPage/test.png";
