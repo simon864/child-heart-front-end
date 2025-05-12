@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  margin-top: 140px;
 }
 
 .ssText {
@@ -16,6 +17,12 @@
 .title img {
   width: 180px;
   height: 180px;
+}
+
+@media (max-width: 965px) {
+  .title {
+    margin-top: 170px;
+  }
 }
 
 @media (max-width: 768px) {

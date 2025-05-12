@@ -1,14 +1,15 @@
-import Title from "../../components/title/title";
+import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
+import Title from "../../components/Title/title";
 import boardStyle from "./boardPage.module.css";
 import { cardInfo } from "./data";
 import { PeopleCard } from "./props";
 
 export default function BoardPage() {
   return (
-    <>
+    <ScrollToTop>
       <Title text="Правление фонда" />
       <BoardContent />
-    </>
+    </ScrollToTop>
   );
 }
 

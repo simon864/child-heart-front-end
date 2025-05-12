@@ -1,14 +1,15 @@
-import Title from "../../components/title/title";
+import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
+import Title from "../../components/Title/title";
 import councilStyle from "./councilPage.module.css";
 import { text } from "./data";
 import { CouncilInfo } from "./props";
 
 export default function CouncilPage() {
   return (
-    <>
+    <ScrollToTop>
       <Title text="Попечительский совет" />
       <CouncilContent />
-    </>
+    </ScrollToTop>
   );
 }
 

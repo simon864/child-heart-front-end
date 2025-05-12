@@ -1,14 +1,15 @@
-import Title from "../../components/title/title";
+import Title from "../../components/Title/title";
 import programsStyle from "./programPage.module.css";
 import { imageArr, textArr } from "./data";
 import { ImagesCard, TextCard } from "./props";
+import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
 
 export default function ProgramPage() {
   return (
-    <>
+    <ScrollToTop>
       <Title text="Наши программы" />
       <ProgramContent />
-    </>
+    </ScrollToTop>
   );
 }
 

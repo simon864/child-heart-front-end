@@ -1,16 +1,17 @@
 import objectivesStyle from "./objectivesPage.module.css";
-import Title from "../../components/title/title";
+import Title from "../../components/Title/title";
 import { DirectionsCard, TasksInfo } from "./props";
 import { directionsText, tasksText } from "./data";
 import testImg from "../../assets/images/objectivesPage/test.png";
+import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
 
 export default function ObjectivesPage() {
   return (
-    <>
+    <ScrollToTop>
       <Title text="Цели и задачи фонда “Детское сердце”" />
       <DirectionsFund />
       <TasksFund />
-    </>
+    </ScrollToTop>
   );
 }
 

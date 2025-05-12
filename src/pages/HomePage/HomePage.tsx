@@ -1,31 +1,40 @@
-import { HelpNeeded, OurProjects, Helped, News } from './data';
-import HeroBackground, { HelpNeededItem, OurProjectsItem, HelpedItem, NewsItem } from './Props';
-import ResponsiveCarousel, { Caorusel } from '../../components/CarouselHome/CarouselHome'
-import Title from '../../components/title/title';
-import styles from './HomePage.module.css'
-import background from '../../assets/images/home-page/background.png'
-import { Link } from 'react-router-dom';
+import { HelpNeeded, OurProjects, Helped, News } from "./data";
+import HeroBackground, {
+  HelpNeededItem,
+  OurProjectsItem,
+  HelpedItem,
+  NewsItem,
+} from "./Props";
+import ResponsiveCarousel, {
+  Caorusel,
+} from "../../components/CarouselHome/CarouselHome";
+
+import styles from "./HomePage.module.css";
+import background from "../../assets/images/home-page/background.png";
+import { Link } from "react-router-dom";
+import Title from "../../components/Title/title";
+import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
 
 function HomePage() {
   return (
-    <>
-    <HeroBackground 
+    <ScrollToTop>
+      <HeroBackground
         image={background}
         contentBelow={
           <div className={styles.centerAlign}>
-            <HelpNeededCarousel/>
-            <HelpedCards/>
-            <OurProjectsCarousel/>
-            <NewsCards/>
+            <HelpNeededCarousel />
+            <HelpedCards />
+            <OurProjectsCarousel />
+            <NewsCards />
           </div>
         }
       >
-        <Title text="Возвращаем здоровье детским сердцам"/>
+        <Title text="Возвращаем здоровье детским сердцам" />
       </HeroBackground>
-    </>
-  )
+    </ScrollToTop>
+  );
 }
-export default HomePage
+export default HomePage;
 
 function HelpNeededCarousel() {
   return (
@@ -48,15 +57,17 @@ function HelpNeededCarousel() {
         </ResponsiveCarousel>
       </div>
     </div>
-  )
+  );
 }
 
 function HelpedCards() {
-  return(
+  return (
     <div className={styles.sectionContainer}>
       <div className={styles.sectionHeader}>
         <h2 className={styles.sectionTitle}>Спасеные сердца</h2>
-        <Link className={styles.readMoreLink} to={"#"}>Все дети, которым вы помогли</Link>
+        <Link className={styles.readMoreLink} to={"#"}>
+          Все дети, которым вы помогли
+        </Link>
       </div>
       <div className={styles.helpedCards}>
         {Helped.map((Helped) => (
@@ -68,35 +79,37 @@ function HelpedCards() {
         ))}
       </div>
     </div>
-  )
+  );
 }
 
 function OurProjectsCarousel() {
-  return(
+  return (
     <div className={styles.sectionContainer}>
       <div className={styles.sectionHeader}>
         <h2 className={styles.sectionTitle}>Наши проекты</h2>
-        <Link className={styles.readMoreLink} to={"/projects-page"}>Смотреть все проекты</Link>
+        <Link className={styles.readMoreLink} to={"/projects-page"}>
+          Смотреть все проекты
+        </Link>
       </div>
       <div className={styles.ourProjectsCarousel}>
         <Caorusel>
           {OurProjects.map((OurProjects) => (
-            <OurProjectsItem
-              image={OurProjects.image}
-            />
+            <OurProjectsItem image={OurProjects.image} />
           ))}
         </Caorusel>
       </div>
     </div>
-  )
+  );
 }
 
 function NewsCards() {
-  return(
+  return (
     <div className={styles.sectionContainer}>
       <div className={styles.sectionHeader}>
         <h2 className={styles.sectionTitle}>Последние новости</h2>
-        <Link className={styles.readMoreLink} to={"#"}>Смотреть все новости</Link>
+        <Link className={styles.readMoreLink} to={"#"}>
+          Смотреть все новости
+        </Link>
       </div>
       <div className={styles.newsCards}>
         {News.map((News) => (
@@ -108,5 +121,5 @@ function NewsCards() {
         ))}
       </div>
     </div>
-  )
+  );
 }

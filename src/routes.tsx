@@ -9,6 +9,7 @@ import TeamPage from "./pages/TeamPage/teamPage";
 import ProgramPage from "./pages/ProgramsPage/programPage";
 import PhilanthropistsPage from "./pages/PhilanthropistsPage/PhilanthropistsPage";
 import ProjectsPage from "./pages/ProjectsPage/ProjectsPage";
+import NeedHelpPage from "./pages/NeedHelpPage/NeedHelpPage";
 
 export default function AppRouters() {
   return (
@@ -23,6 +24,7 @@ export default function AppRouters() {
       <Route path="/program-page" element={<ProgramPage />} />
       <Route path="/philanthopists-page" element={<PhilanthropistsPage />} />
       <Route path="/projects-page" element={<ProjectsPage />} />
+      <Route path="/need-help-page" element={<NeedHelpPage />} />
     </Routes>
   );
 }
