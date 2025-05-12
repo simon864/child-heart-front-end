@@ -12,6 +12,10 @@
   min-width: 320px;
 }
 
+body {
+  margin-top: 138px;
+}
+
 a {
   all: unset;
   cursor: pointer;
@@ -20,6 +24,18 @@ a {
 .carousel-container {
   width: 320px;
   height: fit-content;
+}
+
+@media (max-width: 965px) {
+  body {
+    margin-top: 158px;
+  }
+}
+
+@media (max-width: 360px) {
+  body {
+    margin-top: 148px;
+  }
 }
 
 @media (max-width: 340px) {
