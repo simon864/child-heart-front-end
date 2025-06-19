@@ -14,6 +14,8 @@
 
 body {
   margin-top: 138px;
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
 a {
@@ -24,6 +26,12 @@ a {
 .carousel-container {
   width: 320px;
   height: fit-content;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 @media (max-width: 965px) {
