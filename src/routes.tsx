@@ -9,6 +9,14 @@ import TeamPage from "./pages/TeamPage/teamPage";
 import ProgramPage from "./pages/ProgramsPage/programPage";
 import PhilanthropistsPage from "./pages/PhilanthropistsPage/PhilanthropistsPage";
 import ProjectsPage from "./pages/ProjectsPage/ProjectsPage";
+import HistoryPage from "./pages/HistoryPage/HistoryPage";
+import RequisitesPage from "./pages/RequisitesPage/RequisitesPage";
+import VolunteerPage from "./pages/VolunteerPage/VolunteerPage";
+import BoxesPage from "./pages/BoxesPage/BoxesPage";
+import TaxReturnPage from "./pages/TaxReturnPage/TaxReturnPage";
+import ContactsPage from "./pages/ContactsPage/ContactsPage";
+import SavedPage from "./pages/SavedPage/SavedPage";
+import HelpNeededPage from "./pages/PersonHelpPage/PersonHelpPage";
 
 export default function AppRouters() {
   return (
@@ -23,6 +31,14 @@ export default function AppRouters() {
       <Route path="/program-page" element={<ProgramPage />} />
       <Route path="/philanthopists-page" element={<PhilanthropistsPage />} />
       <Route path="/projects-page" element={<ProjectsPage />} />
+      <Route path="/history-page" element={<HistoryPage />} />
+      <Route path="/requisites-page" element={<RequisitesPage />} />
+      <Route path="/volunteer-page" element={<VolunteerPage />} />
+      <Route path="/boxes-page" element={<BoxesPage />} />
+      <Route path="/tax-return-page" element={<TaxReturnPage />} />
+      <Route path="/contacts-page" element={<ContactsPage />} />
+      <Route path="/saved-page" element={<SavedPage />} />
+      <Route path="/help-needed-page" element={<HelpNeededPage />} />
     </Routes>
   );
 }

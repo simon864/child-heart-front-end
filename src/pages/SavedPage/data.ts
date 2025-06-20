@@ -1,0 +1,217 @@
+import testPhoto from "../../assets/images/test.png";
+import komarova from "../../assets/images/help-needed/Алина Комарова.png";
+import belishkina from "../../assets/images/help-needed/Анастасия Белышкина.png";
+import chuchalova from "../../assets/images/help-needed/Ксения Чучалова.png";
+
+export const Helped = [
+  {
+    name: "Алина Комарова",
+    year: 2019,
+    history:
+      "Алина появилась на свет с довольно редкой патологией сердца – в нем всего один желудочек. Подобная аномалия корректируется (mock up text after this point!!!)",
+    toCollect: 108500,
+    collected: 108500,
+    image: komarova,
+  },
+  {
+    name: "Анастасия Белышкина",
+    year: 2017,
+    history:
+      "Среди диагнозов есть довольно серьезный, требующий неусыпного наблюдения родителей и врачей – врожденный порок сердца, (mock up text after this point!!!)",
+    toCollect: 70000,
+    collected: 70000,
+    image: belishkina,
+  },
+  {
+    name: "Ксения Чучалова",
+    year: 2012,
+    history:
+      "У девочки врожденный порок сердца, осложненный легочной гипертензией. В первый год жизни она перенесла сложную операцию (mock up text after this point!!!)",
+    toCollect: 102000,
+    collected: 102000,
+    image: chuchalova,
+  },
+  {
+    name: "Алина Комарова",
+    year: 2019,
+    history:
+      "Алина появилась на свет с довольно редкой патологией сердца – в нем всего один желудочек. Подобная аномалия корректируется (mock up text after this point!!!)",
+    toCollect: 108500,
+    collected: 108500,
+    image: testPhoto,
+  },
+  {
+    name: "Анастасия Белышкина",
+    year: 2017,
+    history:
+      "Среди диагнозов есть довольно серьезный, требующий неусыпного наблюдения родителей и врачей – врожденный порок сердца, (mock up text after this point!!!)",
+    toCollect: 70000,
+    collected: 70000,
+    image: testPhoto,
+  },
+  {
+    name: "Ксения Чучалова",
+    year: 2012,
+    history:
+      "У девочки врожденный порок сердца, осложненный легочной гипертензией. В первый год жизни она перенесла сложную операцию (mock up text after this point!!!)",
+    toCollect: 102000,
+    collected: 102000,
+    image: testPhoto,
+  },
+  {
+    name: "Алина Комарова",
+    year: 2019,
+    history:
+      "Алина появилась на свет с довольно редкой патологией сердца – в нем всего один желудочек. Подобная аномалия корректируется (mock up text after this point!!!)",
+    toCollect: 108500,
+    collected: 108500,
+    image: komarova,
+  },
+  {
+    name: "Анастасия Белышкина",
+    year: 2017,
+    history:
+      "Среди диагнозов есть довольно серьезный, требующий неусыпного наблюдения родителей и врачей – врожденный порок сердца, (mock up text after this point!!!)",
+    toCollect: 70000,
+    collected: 70000,
+    image: belishkina,
+  },
+  {
+    name: "Ксения Чучалова",
+    year: 2012,
+    history:
+      "У девочки врожденный порок сердца, осложненный легочной гипертензией. В первый год жизни она перенесла сложную операцию (mock up text after this point!!!)",
+    toCollect: 102000,
+    collected: 102000,
+    image: chuchalova,
+  },
+  {
+    name: "Алина Комарова",
+    year: 2019,
+    history:
+      "Алина появилась на свет с довольно редкой патологией сердца – в нем всего один желудочек. Подобная аномалия корректируется (mock up text after this point!!!)",
+    toCollect: 108500,
+    collected: 108500,
+    image: testPhoto,
+  },
+  {
+    name: "Анастасия Белышкина",
+    year: 2017,
+    history:
+      "Среди диагнозов есть довольно серьезный, требующий неусыпного наблюдения родителей и врачей – врожденный порок сердца, (mock up text after this point!!!)",
+    toCollect: 70000,
+    collected: 70000,
+    image: testPhoto,
+  },
+  {
+    name: "Ксения Чучалова",
+    year: 2012,
+    history:
+      "У девочки врожденный порок сердца, осложненный легочной гипертензией. В первый год жизни она перенесла сложную операцию (mock up text after this point!!!)",
+    toCollect: 102000,
+    collected: 102000,
+    image: testPhoto,
+  },
+  {
+    name: "Алина Комарова",
+    year: 2019,
+    history:
+      "Алина появилась на свет с довольно редкой патологией сердца – в нем всего один желудочек. Подобная аномалия корректируется (mock up text after this point!!!)",
+    toCollect: 108500,
+    collected: 108500,
+    image: komarova,
+  },
+  {
+    name: "Анастасия Белышкина",
+    year: 2017,
+    history:
+      "Среди диагнозов есть довольно серьезный, требующий неусыпного наблюдения родителей и врачей – врожденный порок сердца, (mock up text after this point!!!)",
+    toCollect: 70000,
+    collected: 70000,
+    image: belishkina,
+  },
+  {
+    name: "Ксения Чучалова",
+    year: 2012,
+    history:
+      "У девочки врожденный порок сердца, осложненный легочной гипертензией. В первый год жизни она перенесла сложную операцию (mock up text after this point!!!)",
+    toCollect: 102000,
+    collected: 102000,
+    image: chuchalova,
+  },
+  {
+    name: "Алина Комарова",
+    year: 2019,
+    history:
+      "Алина появилась на свет с довольно редкой патологией сердца – в нем всего один желудочек. Подобная аномалия корректируется (mock up text after this point!!!)",
+    toCollect: 108500,
+    collected: 108500,
+    image: testPhoto,
+  },
+  {
+    name: "Анастасия Белышкина",
+    year: 2017,
+    history:
+      "Среди диагнозов есть довольно серьезный, требующий неусыпного наблюдения родителей и врачей – врожденный порок сердца, (mock up text after this point!!!)",
+    toCollect: 70000,
+    collected: 70000,
+    image: testPhoto,
+  },
+];
+
+export const HelpNeeded = [
+    {
+        id : 1,
+        name : "Алина Комарова",
+        year : 2019,
+        history : "Алина появилась на свет с довольно редкой патологией сердца – в нем всего один желудочек. Подобная аномалия корректируется (mock up text after this point!!!)",
+        toCollect : 108500,
+        collected : 8000,
+        image: "src/assets/images/help-needed/Алина Комарова.png"
+    },
+    {
+        id : 2,
+        name : "Анастасия Белышкина",
+        year : 2017,
+        history : "Среди диагнозов есть довольно серьезный, требующий неусыпного наблюдения родителей и врачей – врожденный порок сердца, (mock up text after this point!!!)",
+        toCollect : 70000,
+        collected : 20000,
+        image: "src/assets/images/help-needed/Анастасия Белышкина.png"
+    },
+    {
+        id : 3,
+        name : "Ксения Чучалова",
+        year : 2012,
+        history : "У девочки врожденный порок сердца, осложненный легочной гипертензией. В первый год жизни она перенесла сложную операцию (mock up text after this point!!!)",
+        toCollect : 102000,
+        collected : 1000,
+        image: "src/assets/images/help-needed/Ксения Чучалова.png"
+    },
+    {
+        id : 4,
+        name : "Иван Иванов",
+        year : 2018,
+        history : "(наполнение 1) Иван появился на свет с довольно редкой патологией сердца – в нем всего один желудочек. Подобная аномалия корректируется (mock up text after this point!!!)",
+        toCollect : 108500,
+        collected : 8000,
+        image: "src/assets/images/test.png"
+    },
+    {
+        id : 5,
+        name : "Андрей Андреев",
+        year : 2016,
+        history : "(наполнение 2) Среди диагнозов есть довольно серьезный, требующий неусыпного наблюдения родителей и врачей – врожденный порок сердца, (mock up text after this point!!!)",
+        toCollect : 70000,
+        collected : 20000,
+        image: "src/assets/images/test.png"
+    },
+    {
+        id : 6,
+        name : "Василий Васильев",
+        year : 2015,
+        history : "(наполнение 3) У мальчика врожденный порок сердца, осложненный легочной гипертензией. В первый год жизни он перенес сложную операцию (mock up text after this point!!!)",
+        toCollect : 102000,
+        collected : 1000,
+        image: "src/assets/images/test.png"
+    }
+]

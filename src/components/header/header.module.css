@@ -126,7 +126,7 @@
 }
 
 .helpNow:hover {
-  background-color: #98D39E;
+  background-color: #98d39e;
 }
 
 .volunteer {
@@ -134,7 +134,7 @@
 }
 
 .volunteer:hover {
-  background-color: #EFCACA;
+  background-color: #efcaca;
 }
 
 .hamburger {
@@ -180,7 +180,7 @@
     flex-wrap: wrap;
     position: relative;
   }
-  
+
   .logoContainer {
     flex-direction: row;
     gap: 10px;
@@ -191,7 +191,7 @@
   .logoImage {
     max-width: 150px;
   }
-  
+
   .logoText {
     display: flex;
     flex-direction: column;
@@ -199,30 +199,30 @@
     margin-left: calc(50% - 130px);
     font-size: 13px;
   }
-  
+
   .logoText span {
     display: block;
     line-height: 1.2;
   }
-  
+
   .rightSection {
     width: 100%;
     order: 4;
     position: relative;
   }
-  
+
   .headerButtons {
     justify-content: flex-end;
     margin-top: 8px;
     position: relative;
     z-index: 1;
   }
-  
+
   .hamburger {
     display: block;
     order: 2;
   }
-  
+
   .navigationItems {
     display: none;
     flex-direction: column;
@@ -237,11 +237,11 @@
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     z-index: 2;
   }
-  
+
   .navigationItems.active {
     display: flex;
   }
-  
+
   .navigationItems a,
   .dropdownButton {
     width: 100%;

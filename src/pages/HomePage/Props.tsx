@@ -8,6 +8,7 @@ interface BackgroundProps {
 }
 
 interface HelpNeededProps {
+  id: number;
   name: string;
   year: number;
   history: string;
@@ -57,6 +58,7 @@ export default function HeroBackground ({
 }
 
 export function HelpNeededItem({
+  id,
   name,
   year,
   history,
@@ -67,7 +69,7 @@ export function HelpNeededItem({
   const remaining = toCollect - collected;
 
   return (
-    <div className={styles.itemContainerHelp}>
+    <div className={styles.itemContainerHelp} key={id}>
       <img 
         src={image}
         className={styles.itemImageAlt}
@@ -99,7 +101,7 @@ export function HelpNeededItem({
         
         <div className={styles.actionsContainer}>
           <button className={styles.helpButton}><Link to={"#"}>Хочу помочь</Link></button>
-          <span className={styles.readStoryLink}><Link to={"#"}>Читать историю</Link></span>
+          <span className={styles.readStoryLink}><Link to={"/help-needed-page?id=" + id}>Читать историю</Link></span>
         </div>
       </div>
     </div>

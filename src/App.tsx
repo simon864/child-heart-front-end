@@ -6,7 +6,6 @@ import AppRouters from './routes'
 import Footer from './components/footer/footer'
 
 export default function App() {
-
   return (
     <>
       <BrowserRouter>
@@ -17,5 +16,5 @@ export default function App() {
       </BrowserRouter>
       <Footer />
     </>
-  )
+  );
 }

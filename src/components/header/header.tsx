@@ -19,17 +19,19 @@ function Header() {
     if (!(event.target as Element).closest(`.${styles.dropdownList}`)) {
       setOpenDropdown(null);
     }
-    
-    if (navRef.current && 
-        !navRef.current.contains(event.target as Node) && 
-        !hamburgerRef.current?.contains(event.target as Node)) {
+
+    if (
+      navRef.current &&
+      !navRef.current.contains(event.target as Node) &&
+      !hamburgerRef.current?.contains(event.target as Node)
+    ) {
       setIsMenuOpen(false);
     }
   };
 
   useEffect(() => {
-    window.addEventListener('click', handleClickOutside);
-    return () => window.removeEventListener('click', handleClickOutside);
+    window.addEventListener("click", handleClickOutside);
+    return () => window.removeEventListener("click", handleClickOutside);
   }, []);
 
   return (
@@ -50,9 +52,9 @@ function Header() {
           <Link to={""}>Главная</Link>
 
           <div className={styles.dropdownList}>
-          <button 
-              className={styles.dropdownButton} 
-              onClick={() => toggleDropdown('nav2')}
+            <button
+              className={styles.dropdownButton}
+              onClick={() => toggleDropdown("nav2")}
             >
               <span>О фонде</span>
               <img src={dropdown} alt="" className={styles.dropdownIcon} />
@@ -60,7 +62,7 @@ function Header() {
             <div className={`${styles.dropdownItems} ${openDropdown === 'nav2' ? styles.active : ''}`}>
               <Link to={"/president-page"}>О президенте фонда</Link>
               <Link to={"/objectives-page"}>Цели и задачи</Link>
-              <Link to={"#"}>История</Link>
+              <Link to={"/history-page"}>История</Link>
               <Link to={"/board-page"}>Правление</Link>
               <Link to={"/council-page"}>Попечительский совет</Link>
               <Link to={"/team-page"}>Команда</Link>
@@ -69,48 +71,47 @@ function Header() {
               <Link to={"/reports-page"}>Отчеты и документы</Link>
             </div>
           </div>
-
           <Link to={"/projects-page"}>Наши проекты</Link>
 
           <div className={styles.dropdownList}>
-          <button 
+            <button
               className={styles.dropdownButton}
-              onClick={() => toggleDropdown('nav4')}
+              onClick={() => toggleDropdown("nav4")}
             >
               <span>Помочь фонду</span>
               <img src={dropdown} alt="" className={styles.dropdownIcon} />
             </button>
+
             <div className={`${styles.dropdownItems} ${openDropdown === 'nav4' ? styles.active : ''}`}>
-              <Link to={"#"}>Реквизиты</Link>
-              <Link to={"#"}>Стать волонтером</Link>
-              <Link to={"#"}>Ящики для благотворительности</Link>
-              <Link to={"#"}>Возврат НДФЛ</Link>
+              <Link to={"/requisites-page"}>Реквизиты</Link>
+              <Link to={"/volunteer-page"}>Стать волонтером</Link>
+              <Link to={"/boxes-page"}>Ящики для благотворительности</Link>
+              <Link to={"/tax-return-page"}>Возврат НДФЛ</Link>
             </div>
           </div>
-
-          <Link to={"#"}>Контакты</Link>
+          <Link to={"/contacts-page"}>Контакты</Link>
         </div>
 
         <div className={styles.headerButtons}>
-          <button className={`${styles.buttonSecondary} ${styles.helpNow}`}>Хочу помочь</button>
-          <button className={`${styles.buttonSecondary} ${styles.volunteer}`}>Нужна помощь</button>
+          <button className={`${styles.buttonSecondary} ${styles.helpNow}`}>
+            Хочу помочь
+          </button>
+          <button className={`${styles.buttonSecondary} ${styles.volunteer}`}>
+            Нужна помощь
+          </button>
         </div>
       </div>
 
-      <button 
+      <button
         ref={hamburgerRef}
-        className={styles.hamburger} 
+        className={styles.hamburger}
         onClick={() => setIsMenuOpen(!isMenuOpen)}
         aria-label="Toggle navigation"
       >
-        <img 
-          src={hamburgerIcon} 
-          alt="Menu" 
-          className={styles.hamburgerImage}
-        />
+        <img src={hamburgerIcon} alt="Menu" className={styles.hamburgerImage} />
       </button>
     </header>
   );
-};
+}
 
 export default Header;
