@@ -107,7 +107,7 @@ function NewsCards() {
     <div className={styles.sectionContainer}>
       <div className={styles.sectionHeader}>
         <h2 className={styles.sectionTitle}>Последние новости</h2>
-        <Link className={styles.readMoreLink} to={"#"}>
+        <Link className={styles.readMoreLink} to={"/news-page"}>
           Смотреть все новости
         </Link>
       </div>

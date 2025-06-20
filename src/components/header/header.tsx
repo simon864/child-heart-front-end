@@ -5,6 +5,7 @@ import dropdown from "../../assets/images/icons/dropdown.svg";
 import hamburgerIcon from "../../assets/images/icons/hamburger.svg";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { useModal } from "../DonationModal/donationModal";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -39,6 +40,8 @@ function Header() {
   const HandleHelpClick = () => {
     navigate("/need-help-page");
   };
+
+  const { openModal } = useModal();
 
   return (
     <div className={styles.fixed}>
@@ -113,7 +116,10 @@ function Header() {
           </div>
 
           <div className={styles.headerButtons}>
-            <button className={`${styles.buttonSecondary} ${styles.helpNow}`}>
+            <button
+              className={`${styles.buttonSecondary} ${styles.helpNow}`}
+              onClick={openModal}
+            >
               Хочу помочь
             </button>
             <button
