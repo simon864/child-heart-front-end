@@ -65,6 +65,7 @@ function HelpedCards() {
             name={Helped.name}
             year={Helped.year}
             image={Helped.image}
+            id={Helped.id}
           />
         ))}
       </div>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "./PersonHelpPage.module.css"
+import styles from "./PersonSavedPage.module.css"
 import { Link } from "react-router-dom";
 
 export interface HistoryItem {
@@ -48,7 +48,6 @@ export function PersonHelpItem({
         <div className={styles.textColumn}>
           <div className={styles.imagesColumn}>
               <img src={image} className={styles.mainImage}/>
-                <button className={styles.donationModal}>Помочь ребенку</button>
             </div>
           <div className={styles.desktopHeader}>
             <p className={styles.personMain}>{name}</p>

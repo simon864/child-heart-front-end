@@ -18,6 +18,7 @@ interface HelpNeededProps {
 }
 
 interface HelpedProps {
+  id: number;
   name: string;
   year: number;
   image: string;
@@ -108,10 +109,11 @@ export function HelpNeededItem({
   )
 }
 
-export function HelpedItem({ name, year, image }: HelpedProps) {
+export function HelpedItem({ id, name, year, image }: HelpedProps) {
   return (
     <>
-      <div className={styles.itemContainer}>
+      <div className={styles.itemContainer} key={id}>
+        <Link to={"/person-saved-page?id=" + id} >
         <img 
           src={image}
           className={styles.itemImage}
@@ -125,6 +127,7 @@ export function HelpedItem({ name, year, image }: HelpedProps) {
           
           <span>СБОР ЗАКРЫТ</span>
         </div>
+        </Link>
       </div>
     </>
   )

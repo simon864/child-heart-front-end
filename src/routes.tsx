@@ -17,6 +17,7 @@ import TaxReturnPage from "./pages/TaxReturnPage/TaxReturnPage";
 import ContactsPage from "./pages/ContactsPage/ContactsPage";
 import SavedPage from "./pages/SavedPage/SavedPage";
 import HelpNeededPage from "./pages/PersonHelpPage/PersonHelpPage";
+import PersonSavedPage from "./pages/PersonSavedPage/PersonSavedPage";
 
 export default function AppRouters() {
   return (
@@ -39,6 +40,7 @@ export default function AppRouters() {
       <Route path="/contacts-page" element={<ContactsPage />} />
       <Route path="/saved-page" element={<SavedPage />} />
       <Route path="/help-needed-page" element={<HelpNeededPage />} />
+      <Route path="/person-saved-page" element={<PersonSavedPage />} />
     </Routes>
   );
 }

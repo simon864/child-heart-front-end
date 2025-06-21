@@ -1,22 +1,20 @@
-import styles from "./PersonHelpPage.module.css"
+import styles from "./PersonSavedPage.module.css"
 import { PersonHelpItem, HelpNeededItem } from "./Props";
 import { PersonHelp, HelpNeeded } from "./data";
 import ResponsiveCarousel from "../../components/CarouselHome/CarouselHome";
 import { useSearchParams } from "react-router-dom";
 
-function HelpNeededPage() {
+function PersonSavedPage() {
   const [searchParams] = useSearchParams();
   const currentID = Number(searchParams.get("id"));
     return(
         <>
         <PersonHelpContent />
-        <HelpNeededCarousel pageID={currentID}/>
+        <HelpNeededCarousel/>
         </>
     )
 }
-export default HelpNeededPage
-
-interface PageID { pageID: number}
+export default PersonSavedPage
 
 function PersonHelpContent() {
   const personData = PersonHelp[0];
@@ -32,11 +30,7 @@ function PersonHelpContent() {
   );
 }
 
-function HelpNeededCarousel({ pageID } : PageID ) {
-  const excludeItems = HelpNeeded.filter(item => {
-    if (pageID !== undefined) return item.id !== pageID;
-    else return true;
-  })
+function HelpNeededCarousel() {
   return (
     <div className={styles.sectionContainer}>
       <div className={styles.sectionHeader}>
@@ -44,7 +38,7 @@ function HelpNeededCarousel({ pageID } : PageID ) {
       </div>
       <div className={styles.helpNeededCarousel}>
         <ResponsiveCarousel>
-          {excludeItems.map((item) => (
+          {HelpNeeded.map((item) => (
             <HelpNeededItem
               name={item.name}
               year={item.year}
