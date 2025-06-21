@@ -20,6 +20,10 @@
   gap: 20px;
 }
 
+.repostLinkContainer img {
+  cursor: pointer;
+}
+
 @media (max-width: 1285px) {
   .repostText {
     font-size: 28px;
