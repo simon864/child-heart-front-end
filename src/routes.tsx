@@ -12,15 +12,6 @@ import ProjectsPage from "./pages/ProjectsPage/ProjectsPage";
 import NeedHelpPage from "./pages/NeedHelpPage/NeedHelpPage";
 import NewsPage from "./pages/NewsPage/newPage";
 import NewsDetailPage from "./pages/NewsPage/newsDetailPage";
-import HistoryPage from "./pages/HistoryPage/HistoryPage";
-import RequisitesPage from "./pages/RequisitesPage/RequisitesPage";
-import VolunteerPage from "./pages/VolunteerPage/VolunteerPage";
-import BoxesPage from "./pages/BoxesPage/BoxesPage";
-import TaxReturnPage from "./pages/TaxReturnPage/TaxReturnPage";
-import ContactsPage from "./pages/ContactsPage/ContactsPage";
-import SavedPage from "./pages/SavedPage/SavedPage";
-import HelpNeededPage from "./pages/PersonHelpPage/PersonHelpPage";
-import PersonSavedPage from "./pages/PersonSavedPage/PersonSavedPage";
 
 export default function AppRouters() {
   return (
@@ -38,15 +29,6 @@ export default function AppRouters() {
       <Route path="/need-help-page" element={<NeedHelpPage />} />
       <Route path="/news-page" element={<NewsPage />} />
       <Route path="/news-page/:id" element={<NewsDetailPage />} />
-      <Route path="/history-page" element={<HistoryPage />} />
-      <Route path="/requisites-page" element={<RequisitesPage />} />
-      <Route path="/volunteer-page" element={<VolunteerPage />} />
-      <Route path="/boxes-page" element={<BoxesPage />} />
-      <Route path="/tax-return-page" element={<TaxReturnPage />} />
-      <Route path="/contacts-page" element={<ContactsPage />} />
-      <Route path="/saved-page" element={<SavedPage />} />
-      <Route path="/help-needed-page" element={<HelpNeededPage />} />
-      <Route path="/person-saved-page" element={<PersonSavedPage />} />
     </Routes>
   );
 }

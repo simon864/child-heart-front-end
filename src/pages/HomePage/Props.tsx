@@ -8,7 +8,6 @@ interface BackgroundProps {
 }
 
 interface HelpNeededProps {
-  id: number;
   name: string;
   year: number;
   history: string;
@@ -18,7 +17,6 @@ interface HelpNeededProps {
 }
 
 interface HelpedProps {
-  id: number;
   name: string;
   year: number;
   image: string;
@@ -59,7 +57,6 @@ export default function HeroBackground ({
 }
 
 export function HelpNeededItem({
-  id,
   name,
   year,
   history,
@@ -70,7 +67,7 @@ export function HelpNeededItem({
   const remaining = toCollect - collected;
 
   return (
-    <div className={styles.itemContainerHelp} key={id}>
+    <div className={styles.itemContainerHelp}>
       <img 
         src={image}
         className={styles.itemImageAlt}
@@ -102,18 +99,17 @@ export function HelpNeededItem({
         
         <div className={styles.actionsContainer}>
           <button className={styles.helpButton}><Link to={"#"}>Хочу помочь</Link></button>
-          <span className={styles.readStoryLink}><Link to={"/help-needed-page?id=" + id}>Читать историю</Link></span>
+          <span className={styles.readStoryLink}><Link to={"#"}>Читать историю</Link></span>
         </div>
       </div>
     </div>
   )
 }
 
-export function HelpedItem({ id, name, year, image }: HelpedProps) {
+export function HelpedItem({ name, year, image }: HelpedProps) {
   return (
     <>
-      <div className={styles.itemContainer} key={id}>
-        <Link to={"/person-saved-page?id=" + id} >
+      <div className={styles.itemContainer}>
         <img 
           src={image}
           className={styles.itemImage}
@@ -127,7 +123,6 @@ export function HelpedItem({ id, name, year, image }: HelpedProps) {
           
           <span>СБОР ЗАКРЫТ</span>
         </div>
-        </Link>
       </div>
     </>
   )
