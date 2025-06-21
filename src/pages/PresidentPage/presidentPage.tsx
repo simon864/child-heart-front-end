@@ -3,15 +3,16 @@ import presidentPhoto from "..//..//assets/images/presidentPage/president-photo.
 import { text, award } from "./data";
 import { ParagraphInfo, AchievementCard } from "./props";
 import { useState } from "react";
-import Title from "../../components/title/title";
+import Title from "../../components/Title/title";
+import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
 
 export default function PresidentPage() {
   return (
-    <>
+    <ScrollToTop>
       <TitlePresident />
       <Biography />
       <Achievements />
-    </>
+    </ScrollToTop>
   );
 }
 

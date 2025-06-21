@@ -5,6 +5,10 @@
   font-family: "TTnorms";
 }
 
+body {
+  margin-top: 138px;
+}
+
 #root {
   height: 100vh;
   display: flex;
@@ -17,9 +21,21 @@ a {
   cursor: pointer;
 }
 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .carousel-container {
   width: 320px;
   height: fit-content;
+}
+
+@media (max-width: 965px) {
+  body {
+    margin-top: 158px;
+  }
 }
 
 @media (max-width: 340px) {

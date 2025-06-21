@@ -9,6 +9,9 @@ import TeamPage from "./pages/TeamPage/teamPage";
 import ProgramPage from "./pages/ProgramsPage/programPage";
 import PhilanthropistsPage from "./pages/PhilanthropistsPage/PhilanthropistsPage";
 import ProjectsPage from "./pages/ProjectsPage/ProjectsPage";
+import NeedHelpPage from "./pages/NeedHelpPage/NeedHelpPage";
+import NewsPage from "./pages/NewsPage/newPage";
+import NewsDetailPage from "./pages/NewsPage/newsDetailPage";
 import HistoryPage from "./pages/HistoryPage/HistoryPage";
 import RequisitesPage from "./pages/RequisitesPage/RequisitesPage";
 import VolunteerPage from "./pages/VolunteerPage/VolunteerPage";
@@ -32,6 +35,9 @@ export default function AppRouters() {
       <Route path="/program-page" element={<ProgramPage />} />
       <Route path="/philanthopists-page" element={<PhilanthropistsPage />} />
       <Route path="/projects-page" element={<ProjectsPage />} />
+      <Route path="/need-help-page" element={<NeedHelpPage />} />
+      <Route path="/news-page" element={<NewsPage />} />
+      <Route path="/news-page/:id" element={<NewsDetailPage />} />
       <Route path="/history-page" element={<HistoryPage />} />
       <Route path="/requisites-page" element={<RequisitesPage />} />
       <Route path="/volunteer-page" element={<VolunteerPage />} />

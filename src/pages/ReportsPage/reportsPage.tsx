@@ -1,14 +1,15 @@
 import reportsStyle from "./reportsPage.module.css";
-import Title from "../../components/title/title";
+import Title from "../../components/Title/title";
 import { textLinks } from "./data";
 import { ReportsLinks } from "./props";
+import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
 
 export default function ReportsPage() {
   return (
-    <>
+    <ScrollToTop>
       <Title text={"Отчеты"} />
       <ReportsContent />
-    </>
+    </ScrollToTop>
   );
 }
 

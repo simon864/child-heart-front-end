@@ -1,0 +1,146 @@
+.titleForm {
+  font-family: "TTnormsBold";
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.formContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  column-gap: 40px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.paragraphInfo1,
+.paragraphInfo2 {
+  margin-bottom: 20px;
+  font-family: "TTnormsBold";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.formContainer input {
+  font-family: "TTnorms";
+  font-size: 14px;
+  height: 60px;
+  border: none;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 18px;
+  color: #606060;
+}
+
+.helpButton {
+  font-family: "TTnorms";
+  font-size: 20px;
+  height: 60px;
+  border-radius: 5px;
+  background-color: #ffdada;
+  border: none;
+  cursor: pointer;
+}
+
+.helpButton:hover {
+  filter: brightness(0.95);
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  color: red;
+}
+
+.titleText {
+  font-family: "TTnormsBold";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0px;
+}
+
+.documentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 50px;
+}
+
+.documentText {
+  margin: 0px;
+  font-family: "TTnorms";
+  font-weight: 400;
+  color: #606060;
+}
+
+.documentContainer p:last-child {
+  margin-top: 20px;
+}
+
+.importantContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  gap: 4px;
+}
+
+.importantContainer p:first-child {
+  margin-bottom: 10px;
+}
+
+.importantContainer li {
+  margin-left: 30px;
+  font-family: "TTnorms";
+  font-weight: 400;
+  color: #606060;
+}
+
+.linkContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .formContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .paragraphInfo1 {
+    grid-row: 1;
+  }
+
+  .paragraphInfo2 {
+    grid-row: 5;
+  }
+
+  .childNameInput {
+    grid-row: 2;
+  }
+
+  .parentNameInput {
+    grid-row: 6;
+  }
+
+  .diagnosisInput {
+    grid-row: 4;
+  }
+
+  .dateInput {
+    grid-row: 3;
+  }
+  .center {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+a {
+  word-break: break-word;
+}

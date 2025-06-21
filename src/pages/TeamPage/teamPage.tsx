@@ -1,16 +1,17 @@
 import teamStyle from "./teamPage.module.css";
 import { TeamCard } from "./props";
 import { cardInfo } from "./data";
-import Title from "../../components/title/title";
-import Caorusel from "../../components/caorusel/caorusel";
+import Title from "../../components/Title/title";
+import Caorusel from "../../components/Caorusel/caorusel";
+import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
 
 export default function TeamPage() {
   return (
-    <>
+    <ScrollToTop>
       <Title text="Команда фонда" />
       <TeamContent />
       <TeamCaorusel />
-    </>
+    </ScrollToTop>
   );
 }
 
