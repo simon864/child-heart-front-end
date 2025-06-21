@@ -28,7 +28,7 @@ export const useNews = (options: UseNewsOptions = {}) => {
       console.log("Полученные новости:", {
         data: response.data,
         total: response.total,
-        firstItemId: response.data[0]?.id, // Проверяем наличие ID
+        firstItemId: response.data[0]?._id, // Проверяем наличие ID
       });
 
       console.log("Полученные новости в хуке:", {

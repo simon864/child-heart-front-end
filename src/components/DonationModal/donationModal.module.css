@@ -155,6 +155,10 @@
   margin-top: 10px;
 }
 
+.helpButton:hover {
+  filter: brightness(0.95);
+}
+
 .amountButton {
   font-family: "TTnorms";
   font-size: 14px;

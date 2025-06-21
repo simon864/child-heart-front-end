@@ -5,7 +5,7 @@ import { API_BASE_URL } from "../../api/config";
 import { NewsItem } from "../../types/news";
 import newsStyle from "./newPage.module.css";
 import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
-import Title from "../../components/Title/title";
+import RepostLink from "../../components/RepostLink/RepostLink.tsx";
 
 export default function NewsDetailPage() {
   const { id } = useParams<{ id: string }>();
@@ -61,7 +61,6 @@ export default function NewsDetailPage() {
   return (
     <ScrollToTop>
       <div className={newsStyle.container}>
-        <Title text={newsItem.title} />
         <div className={newsStyle.newsDetailContainer}>
           {newsItem.coverImageUrl && (
             <div className={newsStyle.newsDetailImageContainer}>
@@ -76,6 +75,7 @@ export default function NewsDetailPage() {
             </div>
           )}
           <div className={newsStyle.newsDetailContent}>
+            <p className={newsStyle.detailTitle}>{newsItem.title}</p>
             <time dateTime={newsItem.createdAt} className={newsStyle.newsDate}>
               {new Date(newsItem.createdAt).toLocaleDateString("ru-RU", {
                 day: "numeric",
@@ -89,6 +89,7 @@ export default function NewsDetailPage() {
             />
           </div>
         </div>
+        <RepostLink />
       </div>
     </ScrollToTop>
   );
