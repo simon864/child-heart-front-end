@@ -43,6 +43,7 @@ function HelpNeededCarousel() {
               toCollect={HelpNeeded.toCollect}
               collected={HelpNeeded.collected}
               image={HelpNeeded.image}
+              id={HelpNeeded.id}
             />
           ))}
         </ResponsiveCarousel>
@@ -56,7 +57,7 @@ function HelpedCards() {
     <div className={styles.sectionContainer}>
       <div className={styles.sectionHeader}>
         <h2 className={styles.sectionTitle}>Спасеные сердца</h2>
-        <Link className={styles.readMoreLink} to={"#"}>Все дети, которым вы помогли</Link>
+        <Link className={styles.readMoreLink} to={"/saved-page"}>Все дети, которым вы помогли</Link>
       </div>
       <div className={styles.helpedCards}>
         {Helped.map((Helped) => (
@@ -64,6 +65,7 @@ function HelpedCards() {
             name={Helped.name}
             year={Helped.year}
             image={Helped.image}
+            id={Helped.id}
           />
         ))}
       </div>
