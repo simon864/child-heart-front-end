@@ -134,6 +134,7 @@
 
 .helpNow {
   background-color: #a8e3ae;
+  transition: background-color 0.3s;
 }
 
 .helpNow:hover {
@@ -142,6 +143,7 @@
 
 .volunteer {
   background-color: #ffdada;
+  transition: background-color 0.3s;
 }
 
 .volunteer:hover {

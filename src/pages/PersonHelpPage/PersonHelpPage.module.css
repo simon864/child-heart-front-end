@@ -1,3 +1,96 @@
+.personContainer {
+  margin-top: 50px;
+}
+
+.mobileHeader {
+  display: none;
+}
+
+.desktopHeader {
+  margin-bottom: 20px;
+}
+
+.personMain {
+  font-family: "SS";
+  font-size: 35px;
+  font-weight: bold;
+  color: #00A752;
+  margin-bottom: 10px;
+  line-height: 40px;
+}
+
+.personDiagnosis {
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: "TTnormsBold";
+}
+
+.imagesColumn {
+  float: left;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.mainImage {
+  width: 320px;
+  aspect-ratio: 1/1;
+  max-height: 320px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.donationModal {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #a8e3ae;
+  color: #000;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.donationModal:hover {
+  background-color: #8fd896;
+}
+
+.textColumn {
+  color: #606060;
+  font-size: 16px;
+}
+
+.historyParagraph {
+  margin-bottom: 10px;
+  line-height: 20px;
+}
+
+.readMoreContainer {
+  display: none;
+}
+
+.readMoreButton {
+  font-family: "TTnorms";
+  border: none;
+  background-color: transparent;
+  color: #606060;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.donationContainer {
+  justify-items: center;
+}
+
 .itemContainer, .itemContainerHelp {
   width: calc((70vw / 3) - 20px);
   background-color: #F5F5F5;
@@ -10,14 +103,6 @@
 .itemContainerHelp {
   margin-left: 10px;
 }
-  
-.itemImage {
-  width: 100%;
-  height: 340px;
-  object-fit: cover;
-  object-position: 50% 0;
-  border-radius: 20px 20px 0 0;
-}
 
 .itemImageAlt {
   width: 100%;
@@ -27,20 +112,20 @@
   object-position: 50% 0;
   border-radius: 20px 20px 0 0;
 }
-  
+
 .contentContainer {
   padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-   
+
 .nameYearContainer {
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
-  
+
 .name, .year {
   font-size: 20px;
   font-weight: bold;
@@ -51,7 +136,7 @@
   display: flex;
   flex-direction: column;
 }
-  
+
 .history {
   font-size: 16px;
   color: #606060;
@@ -66,7 +151,7 @@
   display: block;
   text-align: left;
 }
-  
+
 .fundingContainer {
   display: grid;
   grid-template-columns: max-content auto;
@@ -102,7 +187,6 @@
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
   
 .helpButton:hover {
@@ -113,11 +197,6 @@
   font-size: 16px;
   text-decoration: underline;
   cursor: pointer;
-}
-
-.singleImage {
-  width: 100%;
-  border-radius: 20px;
 }
 
 .sectionContainer {
@@ -139,64 +218,9 @@
   margin: 0;
 }
 
-.readMoreLink {
-  font-family: 'TTnormsBold';
-  font-size: 20px;
-  text-decoration: underline;
-  color: #606060;
-  text-align: right;
-}
-
-.readMoreLink:hover {
-  color: #555;
-}
-
-.helpedCards, .newsCards {
-  display: flex;
-  justify-content: space-between;
-  box-sizing: border-box;
-  flex-wrap: wrap;
-  row-gap: 25px;
-}
-
-.helpNeededCarousel, .ourProjectsCarousel {
+.helpNeededCarousel {
   margin: 0;
   width: 100%;
-}
-
-.heroWrapper {
-  position: relative;
-  width: 100%;
-}
-
-.heroContainer {
-  width: 100%;
-}
-
-.heroImage {
-  width: calc(100% / 70 * 100);
-  height: 0;
-  padding-bottom: 89.286%;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  margin-top: -125px;
-  margin-left: calc(-100% / 70 * 15);
-  z-index: 0;
-  border-radius: 50px;
-}
-
-.heroContent {
-  position: absolute;
-  top: 130px;
-  left: 15%;
-  right: 15%;
-  z-index: 1;
-}
-
-.contentBelow {
-  position: relative;
-  z-index: 0;
 }
 
 @media (max-width: 1460px) {
@@ -216,50 +240,57 @@
 }
 
 @media (max-width: 768px) {
+  .desktopHeader {
+    display: none;
+  }
+
+  .mobileHeader {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .textContainer {
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+  }
+
+  .textContainer::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, transparent, white);
+  }
+
+  .readMoreContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+  }
+
+  .contentWrapper {
+    flex-direction: column;
+  }
+  
+  .imagesColumn {
+    width: 100%;
+    float: none;
+    margin-bottom: 25px;
+  }
+
+  .mainImage {
+    width: 100%;
+  }
+  
+  .donationModal {
+    width: calc(25% - 10px);
+  }
+
   .sectionTitle {
     font-size: 25px;
-  }
-  
-  .readMoreLink {
-    font-size: 16px;
-  }
-  
-  .helpedCards,
-  .newsCards {
-    padding: 0;
-  }
-  
-  .heroImage {
-    width: calc(100% + 20px);
-    margin-left: -10px;
-    margin-top: 50px;
-    padding-bottom: 60%;
-    border-radius: 30px;
-  }
-  
-  .heroContent {
-    left: 20px;
-    right: 20px;
-    top: -50px;
-  }
-}
-
-@media (max-width: 602px) {
-  .heroImage {
-    margin-top: 85px;
-  }
-
-  .heroContent {
-    top: -85px;
-  }
-}
-
-@media (max-width: 350px) {
-  .heroImage {
-    margin-top: 120px;
-  }
-
-  .heroContent {
-    top: -120px;
   }
 }
