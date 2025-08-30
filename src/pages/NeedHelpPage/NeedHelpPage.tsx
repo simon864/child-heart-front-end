@@ -21,6 +21,16 @@ export default function NeedHelpPage() {
   );
 }
 
+const sanitizeInput = (value: string) => {
+  let safeValue = value
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#x27;");
+  return safeValue.replace(/[^а-яА-ЯёЁa-zA-Z0-9\s\-().,]/g, "");
+};
+
 function HelpForm() {
   const [birthDate, setBirthDate] = useState("");
   const [phone, setPhone] = useState("");
@@ -148,14 +158,36 @@ function HelpForm() {
           type="text"
           placeholder="ФИО ребенка"
           value={childName}
-          onChange={(e) => setChildName(e.target.value)}
+          onChange={(e) => {
+            const filteredValue = e.target.value.replace(
+              /[^а-яА-ЯёЁa-zA-Z\s-]/g,
+              ""
+            );
+            setChildName(filteredValue);
+          }}
+          onKeyDown={(e) => {
+            if (/[0-9!@#$%^&*()_+=<>?/[\]{}|\\,.:;'"`~]/.test(e.key)) {
+              e.preventDefault();
+            }
+          }}
         />
         <input
           className={helpStyle.parentNameInput}
           type="text"
           placeholder="ФИО представителя"
           value={parentName}
-          onChange={(e) => setParentName(e.target.value)}
+          onChange={(e) => {
+            const filteredValue = e.target.value.replace(
+              /[^а-яА-ЯёЁa-zA-Z\s'-]/g,
+              ""
+            );
+            setParentName(filteredValue);
+          }}
+          onKeyDown={(e) => {
+            if (/[0-9!@#$%^&*()_+=<>?/[\]{}|\\,.:;"`~]/.test(e.key)) {
+              e.preventDefault();
+            }
+          }}
         />
         <IMaskInput
           className={helpStyle.dateInput}
@@ -180,7 +212,12 @@ function HelpForm() {
           type="text"
           placeholder="Диагноз ребенка"
           value={diagnosis}
-          onChange={(e) => setDiagnosis(e.target.value)}
+          onChange={(e) => setDiagnosis(sanitizeInput(e.target.value))}
+          onKeyDown={(e) => {
+            if (/[!@#$%^&*_+=<>?/[\]{}|\\;'"`~]/.test(e.key)) {
+              e.preventDefault();
+            }
+          }}
         />
 
         <button
