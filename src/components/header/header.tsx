@@ -47,10 +47,10 @@ function Header() {
     <div className={styles.fixed}>
       <header className={styles.header}>
         <div className={styles.logoContainer}>
-          <Link to={""}>
+          <Link to={"*"}>
             <img src={logo} className={styles.logoImage} />
           </Link>
-          <Link to={""} className={styles.logoText}>
+          <Link to={"*"} className={styles.logoText}>
             <span>Кузбасский </span>
             <span>благотворительный </span>
             <span>фонд </span>
