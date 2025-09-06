@@ -1,44 +1,58 @@
-import testPhoto from "../../assets/images/objectivesPage/test.png";
+import program11 from "../../assets/images/program-page/program11.png";
+import program12 from "../../assets/images/program-page/program12.png";
+import program13 from "../../assets/images/program-page/program13.png";
+import program21 from "../../assets/images/program-page/program21.png";
+import program22 from "../../assets/images/program-page/program22.png";
+import program23 from "../../assets/images/program-page/program23.png";
+import program31 from "../../assets/images/program-page/program31.png";
+import program32 from "../../assets/images/program-page/program32.png";
+import program33 from "../../assets/images/program-page/program33.png";
+import program41 from "../../assets/images/program-page/program41.png";
+import program42 from "../../assets/images/program-page/program42.png";
+import program43 from "../../assets/images/program-page/program43.png";
+import program51 from "../../assets/images/program-page/program51.png";
+import program52 from "../../assets/images/program-page/program52.png";
+import program53 from "../../assets/images/program-page/program53.png";
 
 export const imageArr = [
   {
     id: 0,
     images: [
-      { id: 0, src: testPhoto },
-      { id: 1, src: testPhoto },
-      { id: 2, src: testPhoto },
+      { id: 0, src: program11 },
+      { id: 1, src: program12 },
+      { id: 2, src: program13 },
     ],
   },
   {
     id: 1,
     images: [
-      { id: 0, src: testPhoto },
-      { id: 1, src: testPhoto },
-      { id: 2, src: testPhoto },
+      { id: 0, src: program21 },
+      { id: 1, src: program22 },
+      { id: 2, src: program23 },
     ],
   },
   {
     id: 2,
     images: [
-      { id: 0, src: testPhoto },
-      { id: 1, src: testPhoto },
-      { id: 2, src: testPhoto },
+      { id: 0, src: program31 },
+      { id: 1, src: program32 },
+      { id: 2, src: program33 },
     ],
   },
   {
     id: 3,
     images: [
-      { id: 0, src: testPhoto },
-      { id: 1, src: testPhoto },
-      { id: 2, src: testPhoto },
+      { id: 0, src: program41 },
+      { id: 1, src: program42 },
+      { id: 2, src: program43 },
     ],
   },
   {
     id: 4,
     images: [
-      { id: 0, src: testPhoto },
-      { id: 1, src: testPhoto },
-      { id: 2, src: testPhoto },
+      { id: 0, src: program51 },
+      { id: 1, src: program52 },
+      { id: 2, src: program53 },
     ],
   },
 ];

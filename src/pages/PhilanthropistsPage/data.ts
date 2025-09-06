@@ -1,9 +1,11 @@
-import testPhoto from "../../assets/images/objectivesPage/test.png";
+import company1 from "../../assets/images/philanthropists-page/company1.png"
+import company2 from "../../assets/images/philanthropists-page/company2.png"
+import company3 from "../../assets/images/philanthropists-page/company3.png"
 
 export const philanthopistsArr = [
   {
     id: 1,
-    image: testPhoto,
+    image: company1,
     title: "ОАО «СУЭК-Кузбасс»",
     text: [
       {
@@ -35,7 +37,7 @@ export const philanthopistsArr = [
   },
   {
     id: 2,
-    image: testPhoto,
+    image: company2,
     title: "Министерство строительства Кузбасса",
     text: [
       {
@@ -62,7 +64,7 @@ export const philanthopistsArr = [
   },
   {
     id: 3,
-    image: testPhoto,
+    image: company3,
     title: "КОАО «Азот»",
     text: [
       {

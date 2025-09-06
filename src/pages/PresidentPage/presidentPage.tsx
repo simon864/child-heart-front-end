@@ -1,5 +1,5 @@
 import presidentStyle from "./presidentPage.module.css";
-import presidentPhoto from "..//..//assets/images/presidentPage/president-photo.png";
+import presidentPhoto1 from "..//..//assets/images/presidentPage/president-photo-1.png";
 import { text, award } from "./data";
 import { ParagraphInfo, AchievementCard } from "./props";
 import { useState } from "react";
@@ -46,7 +46,7 @@ function Biography() {
       <div className={presidentStyle.photoContainer}>
         <img
           className={presidentStyle.photo}
-          src={presidentPhoto}
+          src={presidentPhoto1}
           alt="President Photo"
         />
       </div>

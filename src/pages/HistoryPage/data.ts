@@ -1,4 +1,9 @@
-import testPhoto from "../../assets/images/test.png"
+import history1 from "../../assets/images/history-page/history1.png"
+import history2 from "../../assets/images/history-page/history2.png"
+import history3 from "../../assets/images/history-page/history3.png"
+import history4 from "../../assets/images/history-page/history4.png"
+import history5 from "../../assets/images/history-page/history5.png"
+import history6 from "../../assets/images/history-page/history6.png"
 
 export const Text = [
     {
@@ -33,21 +38,21 @@ export const Text = [
 
 export const HistoryImages = [
 {
-    image: testPhoto
+    image: history1
 },
 {
-    image: testPhoto
+    image: history2
 },
 {
-    image: testPhoto
+    image: history3
 },
 {
-    image: testPhoto
+    image: history4
 },
 {
-    image: testPhoto
+    image: history5
 },
 {
-    image: testPhoto
+    image: history6
 },
 ]

@@ -1,27 +1,29 @@
-import presidentPhoto from "../../assets/images/presidentPage/president-photo.png";
-import testPhoto from "../../assets/images/objectivesPage/test.png";
+import presidentPhoto1 from "../../assets/images/presidentPage/president-photo-1.png";
+import presidentPhoto2 from "../../assets/images/presidentPage/president-photo-2.png";
+import presidentPhoto3 from "../../assets/images/presidentPage/president-photo-3.png";
+import presidentPhoto4 from "../../assets/images/presidentPage/president-photo-4.png";
 
 export const cardInfo = [
   {
-    image: presidentPhoto,
+    image: presidentPhoto1,
     title: "Президент фонда",
     name: "Ольга Леонидовна Барбараш",
     description: "Профессор, доктор медицинских наук, академик РАН",
   },
   {
-    image: testPhoto,
+    image: presidentPhoto2,
     title: "Исполнительный директор",
     name: "Александр Иванович Санюк",
     description: "Заместитель директора НИИ КПССЗ по экономике и финансам",
   },
   {
-    image: testPhoto,
+    image: presidentPhoto3,
     title: "Учредитель",
     name: "Сергей Анатольевич Макаров",
     description: "Главный врач ГБУЗ «КККД», доктор медицинских наук",
   },
   {
-    image: testPhoto,
+    image: presidentPhoto4,
     title: "Учредитель",
     name: "Дмитрий Викторович Борисенко",
     description:

@@ -1,33 +1,38 @@
-import testPhoto from "../../assets/images/objectivesPage/test.png";
+import team1 from "../../assets/images/team-page/team1.png"
+import team2 from "../../assets/images/team-page/team2.png"
+import team3 from "../../assets/images/team-page/team3.png"
+import team4 from "../../assets/images/team-page/team4.png"
+import team5 from "../../assets/images/team-page/team5.png"
+import team6 from "../../assets/images/team-page/team6.png"
 
 export const cardInfo = [
   {
-    image: testPhoto,
+    image: team1,
     name: "Пермина Анастасия",
     post: "Заместитель исполнительного директор",
   },
   {
-    image: testPhoto,
+    image: team2,
     name: "Никонова Ольга",
     post: "Главный бухгалтер",
   },
   {
-    image: testPhoto,
+    image: team3,
     name: "Лобанов Сергей",
     post: "Системный администратор",
   },
   {
-    image: testPhoto,
+    image: team4,
     name: "Агарина Арина",
     post: "Менеджер",
   },
   {
-    image: testPhoto,
+    image: team5,
     name: "Госельбах Алина",
     post: "Психолог",
   },
   {
-    image: testPhoto,
+    image: team6,
     name: "Созонова Анна",
     post: "Социальный психолог",
   },
