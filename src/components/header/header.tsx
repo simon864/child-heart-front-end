@@ -81,7 +81,7 @@ function Header() {
               >
                 <Link to={"/president-page"}>О президенте фонда</Link>
                 <Link to={"/objectives-page"}>Цели и задачи</Link>
-                <Link to={"#"}>История</Link>
+                <Link to={"/history-page"}>История</Link>
                 <Link to={"/board-page"}>Правление</Link>
                 <Link to={"/council-page"}>Попечительский совет</Link>
                 <Link to={"/team-page"}>Команда</Link>
@@ -106,13 +106,13 @@ function Header() {
                   openDropdown === "nav4" ? styles.active : ""
                 }`}
               >
-                <Link to={"#"}>Реквизиты</Link>
-                <Link to={"#"}>Стать волонтером</Link>
-                <Link to={"#"}>Ящики для благотворительности</Link>
-                <Link to={"#"}>Возврат НДФЛ</Link>
+                <Link to={"/requisites-page"}>Реквизиты</Link>
+                <Link to={"/volunteer-page"}>Стать волонтером</Link>
+                <Link to={"/boxes-page"}>Ящики для благотворительности</Link>
+                <Link to={"/tax-return-page"}>Возврат НДФЛ</Link>
               </div>
             </div>
-            <Link to={"#"}>Контакты</Link>
+            <Link to={"/contacts-page"}>Контакты</Link>
           </div>
 
           <div className={styles.headerButtons}>
